@@ -71,12 +71,12 @@ body {
   overflow: visible;
 }
 a {
-  color: #d7722d;
+  color: #75320a;
   cursor: pointer;
 }
 a:hover {
   text-decoration: none;
-  color: #d7722d;
+  color: #75320a;
 }
 .container {
   margin: auto;
@@ -237,7 +237,7 @@ a:hover {
   }
 }
 #masthead .masthead-inner .site-branding {
-  background: #d7722d;
+  background: #75320a;
   right: 5px;
   position: relative;
   padding: 30px 0;
@@ -267,7 +267,7 @@ a:hover {
   content: "";
   height: 100%;
   width: 2000px;
-  background: #d7722d;
+  background: #75320a;
   position: absolute;
   left: -2000px;
   top: 0;
@@ -280,8 +280,8 @@ a:hover {
   position: absolute;
   right: -180px;
   top: -57px;
-  border-left: solid 90px #d7722d;
-  border-top: solid 90px #d7722d;
+  border-left: solid 90px #75320a;
+  border-top: solid 90px #75320a;
   border-bottom: solid 90px transparent;
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -722,7 +722,7 @@ a:hover {
   left: 0;
   bottom: 0;
   height: 2px;
-  background: #d7722d;
+  background: #75320a;
   transition: 0.4s all ease 0.2s;
   -webkit-transition: 0.4s all ease 0.2s;
   -moz-transition: 0.4s all ease 0.2s;
@@ -749,7 +749,7 @@ a:hover {
   -moz-transition: 0.6s all ease;
   -ms-transition: 0.6s all ease;
   -o-transition: 0.6s all ease;
-  background: #b05b21;
+  background: #461e06;
   height: 4px;
 }
 #site-navigation.single ul li ul {
@@ -808,7 +808,7 @@ a:hover {
   -moz-transition: 0.6s all ease;
   -ms-transition: 0.6s all ease;
   -o-transition: 0.6s all ease;
-  background: #b05b21;
+  background: #461e06;
   height: 4px;
 }
 /* --------------- pagination ------------ */
@@ -830,7 +830,7 @@ a:hover {
   display: inline;
 }
 .pagination ul > li > a {
-  color: #d66f29;
+  color: #70300a;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -838,16 +838,16 @@ a:hover {
   -o-transition: all 0.4s ease;
 }
 .pagination ul > li > a:hover {
-  color: #d7722d;
+  color: #75320a;
   background: #ffffff;
 }
 .pagination .current {
-  background: #d7722d;
+  background: #75320a;
   color: #ffffff;
   cursor: auto;
 }
 .pagination .current:hover {
-  background: #d7722d;
+  background: #75320a;
   color: #ffffff;
 }
 .pagination ul  > li  > a,
@@ -858,18 +858,18 @@ a:hover {
   text-decoration: none;
   margin-right: 5px;
   background-color: #ffffff;
-  border: 1px solid rgba(215, 114, 45, 0.5);
+  border: 1px solid rgba(117, 50, 10, 0.5);
   border-radius: 3px;
   display: inline-block;
   color: #333333;
 }
 .pagination ul  > li  > a:hover,
 .pagination ul  > li  > span:hover {
-  background: #d7722d;
+  background: #75320a;
   color: #ffffff;
 }
 .social-icons {
-  background: rgba(215, 114, 45, 0.5);
+  background: rgba(117, 50, 10, 0.5);
   float: right;
   text-align: right;
   padding: 30px 0;
@@ -890,7 +890,7 @@ a:hover {
   height: 100%;
   top: 0;
   width: 2000px;
-  background: rgba(215, 114, 45, 0.5);
+  background: rgba(117, 50, 10, 0.5);
   position: absolute;
   right: -2000px;
 }
@@ -898,20 +898,20 @@ a:hover {
   content: "";
   height: 175px;
   width: 175px;
-  background: rgba(215, 114, 45, 0);
+  background: rgba(117, 50, 10, 0);
   position: absolute;
   left: -179px;
   top: -57px;
   border-left: solid 89px transparent;
   border-bottom: solid 90px transparent;
-  border-top: solid 90px rgba(215, 114, 45, 0.5);
+  border-top: solid 90px rgba(117, 50, 10, 0.5);
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform-origin: bottom right;
-  border-right: solid 90px rgba(215, 114, 45, 0.5);
+  border-right: solid 90px rgba(117, 50, 10, 0.5);
   z-index: 5;
 }
 .social-icons .none {
@@ -973,7 +973,7 @@ a:hover {
   animation-timing-function: linear;
   animation-iteration-count: 1;
   color: #ffffff;
-  background: #d7722d;
+  background: #75320a;
   border-color: #ffffff;
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
@@ -991,10 +991,10 @@ a:hover {
   transform: scale(1.2);
   transition: all ease 0.5s;
   background-color: #ffffff;
-  color: #d7722d;
+  color: #75320a;
 }
 .style3 {
-  border: solid 2px #d7722d;
+  border: solid 2px #75320a;
   font-size: 20px;
   transform: translateZ(0);
   position: relative;
@@ -1015,7 +1015,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(215, 114, 45, 0.5);
+  background: rgba(117, 50, 10, 0.5);
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition-property: transform;
@@ -1053,7 +1053,7 @@ a:hover {
   width: 10%;
   height: 2px;
   margin-top: 5px;
-  background: #d7722d;
+  background: #75320a;
 }
 #primary-mono .entry-meta,
 #primary-mono .entry-footer {
@@ -1068,7 +1068,7 @@ a:hover {
 }
 #primary-mono .entry-meta a:hover,
 #primary-mono .entry-footer a:hover {
-  color: #d7722d;
+  color: #75320a;
 }
 #primary-mono .posted-on,
 #primary-mono .byline {
@@ -1078,13 +1078,13 @@ a:hover {
   font-size: 13px;
   text-transform: uppercase;
   margin-bottom: 6px;
-  color: #d7722d;
+  color: #75320a;
   text-align: right;
 }
 #primary-mono .posted-on a,
 #primary-mono .byline a {
   text-decoration: none;
-  color: #d7722d;
+  color: #75320a;
   font-family: "Arvo", sans-serif;
 }
 #primary-mono .entry-footer {
@@ -1131,7 +1131,7 @@ a:hover {
   font-style: italic;
 }
 #primary-mono .nav-links .navl a:hover {
-  color: #d7722d;
+  color: #75320a;
 }
 #primary-mono .nav-links .nav-previous,
 #primary-mono .nav-links .nav-next {
@@ -1170,7 +1170,7 @@ a:hover {
   margin-left: 35%;
   height: 2px;
   margin-top: 14px;
-  background: #d7722d;
+  background: #75320a;
 }
 #secondary .widget {
   font-size: 14px;
@@ -1185,7 +1185,7 @@ a:hover {
   -o-transition: 0.4s all ease;
 }
 #secondary .widget a:hover {
-  color: #d7722d;
+  color: #75320a;
 }
 #secondary .widget ul {
   font-size: 13px;
@@ -1230,7 +1230,7 @@ a:hover {
   color: #737373;
   font-size: 10px;
   margin-right: 5px;
-  color: #d7722d;
+  color: #75320a;
 }
 #secondary .widget_recent_entries ul li,
 #secondary .widget_recent_comments ul li,
@@ -1260,7 +1260,7 @@ a:hover {
 }
 #secondary .widget_tag_cloud .tagcloud a,
 #secondary .widget_product_tag_cloud .tagcloud a {
-  background: #d7722d;
+  background: #75320a;
   font-size: 14px !important;
   text-transform: uppercase;
   font-weight: lighter;
@@ -1330,7 +1330,7 @@ a:hover {
 #secondary input[type=search],
 #secondary textarea {
   background: #f2f2f2;
-  border: solid 1px #bc6224;
+  border: solid 1px #542407;
   outline: none;
   color: #333333;
 }
@@ -1390,9 +1390,9 @@ a:hover {
 #respond .comment-form-email label,
 #respond .comment-form-url label,
 #respond .comment-form-comment label {
-  background: #d7722d;
+  background: #75320a;
   color: #ffffff;
-  border-bottom: solid 1px #d7722d;
+  border-bottom: solid 1px #75320a;
   padding: 5px;
   margin-right: -5px;
   min-width: 70px;
@@ -1406,7 +1406,7 @@ a:hover {
   padding: 10px;
   background: #ffffff;
   font-weight: bold;
-  color: #d7722d;
+  color: #75320a;
   margin-bottom: 60px;
 }
 #respond .comment-notes,
@@ -1497,7 +1497,7 @@ a:hover {
   border: solid 1px #cccccc;
 }
 #footer-sidebar .footer-column .widget a {
-  color: #df8f58;
+  color: #a4460e;
   font-weight: normal;
   transition: 0.4s all ease;
   -webkit-transition: 0.4s all ease;
@@ -1524,7 +1524,7 @@ a:hover {
   padding: 2px;
 }
 #footer-sidebar .footer-column .widget_tag_cloud .tagcloud a {
-  background: #d7722d;
+  background: #75320a;
   font-size: 14px !important;
   text-transform: uppercase;
   font-weight: lighter;
@@ -1534,24 +1534,24 @@ a:hover {
   display: inline-block;
 }
 #footer-sidebar .footer-column .widget_price_filter .ui-slider .ui-slider-handle {
-  background-color: #9a501d;
+  background-color: #2f1404;
 }
 #footer-sidebar .footer-column .widget_price_filter .ui-slider .ui-slider-range {
-  background-color: #e39d6d;
+  background-color: #bb5010;
 }
 #footer-sidebar .footer-column .widget_price_filter .price_slider_wrapper .ui-widget-content {
   border-radius: 1em;
-  background-color: #b05b21;
+  background-color: #461e06;
 }
 #footer-sidebar .footer-column button {
-  background: #9a501d;
+  background: #2f1404;
   color: #ffffff;
 }
 #footer-sidebar .footer-column input[type=text],
 #footer-sidebar .footer-column input[type=search],
 #footer-sidebar .footer-column textarea {
-  background: #b86023;
-  border: solid 1px #b05b21;
+  background: #4f2207;
+  border: solid 1px #461e06;
   outline: none;
   color: #ffffff;
 }
@@ -1642,7 +1642,7 @@ a:hover {
   margin-right: 5px;
 }
 #colophon {
-  background: #b05b21;
+  background: #461e06;
   padding: 15px 10px 15px 10px;
   color: #f5f5f5;
   font-size: 13px;
@@ -1677,7 +1677,7 @@ a:hover {
 }
 .eta .fg-item-container .post-details h3 {
   text-align: center;
-  background: #d7722d;
+  background: #75320a;
   color: #ffffff;
   width: 100%;
   padding: 15px 10px;
@@ -1703,7 +1703,7 @@ a:hover {
     -ms-transform: translateY(0%);
     -o-transform: translateY(0%);
     padding: 10px;
-    background: rgba(215, 114, 45, 0.75);
+    background: rgba(117, 50, 10, 0.75);
   }
 }
 .eta .fg-item-container:hover .post-details h3 {
@@ -1803,7 +1803,7 @@ a:hover {
   display: inline-block;
   font-size: 28px;
   padding: 10px;
-  background: rgba(215, 114, 45, 0.5);
+  background: rgba(117, 50, 10, 0.5);
   border-radius: 5px;
   color: white;
   font-weight: normal;
@@ -1846,7 +1846,7 @@ a:hover {
   border: none;
 }
 .grid .featured-thumb {
-  border-top: #d7722d solid 3px;
+  border-top: #75320a solid 3px;
   overflow: hidden;
   transition: 0.3s all ease;
   -webkit-transition: 0.3s all ease;
@@ -1909,7 +1909,7 @@ a:hover {
   text-decoration: underline;
 }
 .grid .out-thumb .postedon a:hover {
-  color: #d7722d;
+  color: #75320a;
 }
 .grid .out-thumb .entry-excerpt {
   color: #777;
@@ -1922,7 +1922,7 @@ a:hover {
 }
 .grid .hvr-underline-from-center:before {
   height: 1px;
-  background: #d7722d;
+  background: #75320a;
 }
 .grid_2_column {
   padding: 0;
@@ -1981,7 +1981,7 @@ a:hover {
   -moz-transition: 0.4s all ease;
   -ms-transition: 0.4s all ease;
   -o-transition: 0.4s all ease;
-  border-right: solid 7px #d7722d;
+  border-right: solid 7px #75320a;
 }
 .plum .out-thumb {
   padding: 15px;
@@ -1992,7 +1992,7 @@ a:hover {
   bottom: 15px;
   text-align: right;
   max-width: 50%;
-  border-left: solid 10px #d7722d;
+  border-left: solid 10px #75320a;
   opacity: 1;
   transform: rotate(0deg) scale(1.65) translateX(200px);
   -webkit-transform: rotate(0deg) scale(1.65) translateX(200px);
@@ -2040,7 +2040,7 @@ a:hover {
 .plum .out-thumb .entry-header .postdate .day {
   display: block;
   font-size: 20px;
-  color: #d7722d;
+  color: #75320a;
 }
 .plum .out-thumb .entry-header .postdate .month {
   text-transform: uppercase;
@@ -2080,7 +2080,7 @@ a:hover {
   opacity: 1;
 }
 .plum:hover .out-thumb a:hover {
-  color: #d7722d;
+  color: #75320a;
 }
 .plum:hover .featured-thumb {
   transform: scale(1) translateX(-50px);
@@ -2141,10 +2141,10 @@ a:hover {
   margin: 10px 0;
 }
 .slide .out-thumb .entry-title a:hover {
-  color: #d7722d;
+  color: #75320a;
 }
 .slide .out-thumb .date {
-  background: #d7722d;
+  background: #75320a;
 }
 .slide .out-thumb .author {
   background: black;
@@ -2173,7 +2173,7 @@ p.demo_store {
   font-size: 1em;
   padding: 1em 0;
   text-align: center;
-  background-color: #d7722d;
+  background-color: #75320a;
   color: #ffffff;
   z-index: 99998;
   box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
@@ -2276,7 +2276,7 @@ p.demo_store {
   padding: 5px 10px;
 }
 .woocommerce .woocommerce-breadcrumb a {
-  color: #d7722d;
+  color: #75320a;
 }
 .woocommerce .woocommerce-breadcrumb .fa {
   color: #666666;
@@ -2315,7 +2315,7 @@ p.demo_store {
   position: absolute;
   top: 5px;
   right: 5px;
-  background: rgba(215, 114, 45, 0.9);
+  background: rgba(117, 50, 10, 0.9);
   color: #ffffff;
   padding: 10px;
   z-index: 99;
@@ -2366,11 +2366,11 @@ p.demo_store {
   -o-transition: 0.4s all ease;
 }
 .woocommerce ul.products li.product .button:hover {
-  background: #d7722d;
+  background: #75320a;
   color: #ffffff;
 }
 .woocommerce ul.products li.product .price {
-  color: #d7722d;
+  color: #75320a;
   display: block;
   font-weight: bold;
   margin-bottom: .5em;
@@ -2388,7 +2388,7 @@ p.demo_store {
   font-size: 0.67em;
   margin: -2px 0 0 0;
   text-transform: uppercase;
-  color: rgba(130, 130, 130, 0.005);
+  color: rgba(69, 62, 58, 0.005);
 }
 .woocommerce .woocommerce-result-count {
   margin: 0 0 1em;
@@ -2492,7 +2492,7 @@ p.demo_store {
 }
 .star-rating span:before {
   content: "\f005\f005\f005\f005\f005";
-  color: #d7722d;
+  color: #75320a;
   top: 0;
   position: absolute;
   left: 0;
@@ -2692,7 +2692,7 @@ ol.commentlist {
 .woocommerce button.button.alt,
 .woocommerce input.button.alt,
 .woocommerce #respond input#submit.alt {
-  background-color: #d7722d;
+  background-color: #75320a;
   color: #333333;
   -webkit-font-smoothing: antialiased;
 }
@@ -2726,7 +2726,7 @@ ol.commentlist {
 .woocommerce button.button.alt:disabled[disabled]:hover,
 .woocommerce input.button.alt:disabled[disabled]:hover,
 .woocommerce #respond input#submit.alt:disabled[disabled]:hover {
-  background-color: #d7722d;
+  background-color: #75320a;
   color: #333333;
 }
 .woocommerce a.button:disabled,
@@ -2781,7 +2781,7 @@ ol.commentlist {
   -o-transition: 0.4s all ease;
 }
 .woocommerce a.added_to_cart:hover {
-  background: #d7722d;
+  background: #75320a;
   color: #ffffff;
 }
 /**
@@ -2835,7 +2835,7 @@ ol.commentlist {
 }
 .woocommerce div.product span.price,
 .woocommerce div.product p.price {
-  color: #d7722d;
+  color: #75320a;
   font-size: 1.25em;
 }
 .woocommerce div.product span.price ins,
@@ -2849,7 +2849,7 @@ ol.commentlist {
   display: block;
 }
 .woocommerce div.product > span.onsale {
-  background: rgba(215, 114, 45, 0.8);
+  background: rgba(117, 50, 10, 0.8);
   padding: 10px;
   color: white;
   position: absolute;
@@ -2877,7 +2877,7 @@ ol.commentlist {
   font-size: 0.92em;
 }
 .woocommerce div.product .stock {
-  color: #d7722d;
+  color: #75320a;
 }
 .woocommerce div.product .out-of-stock {
   color: red;
@@ -3199,7 +3199,7 @@ ol.commentlist {
   width: 100%;
 }
 .woocommerce-cart .cart-collaterals .cart_totals .discount td {
-  color: #d7722d;
+  color: #75320a;
 }
 .woocommerce-cart .cart-collaterals .cart_totals tr td,
 .woocommerce-cart .cart-collaterals .cart_totals tr th {
@@ -3812,7 +3812,7 @@ p.woocommerce-shipping-contents {
   z-index: 2;
   width: 1em;
   height: 1em;
-  background-color: #d7722d;
+  background-color: #75320a;
   border-radius: 1em;
   cursor: ew-resize;
   outline: none;
@@ -3826,11 +3826,11 @@ p.woocommerce-shipping-contents {
   display: block;
   border: 0;
   border-radius: 1em;
-  background-color: #c56626;
+  background-color: #5e2808;
 }
 .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
   border-radius: 1em;
-  background-color: #b05b21;
+  background-color: #461e06;
   border: 0;
 }
 .woocommerce .widget_price_filter .ui-slider-horizontal {

@@ -24,7 +24,7 @@
 	);
 	
 	function plum_sanitize_blog_layout( $input ) {
-		if ( in_array($input, array('grid','grid_2_column','plum','plum_3_column') ) )
+		if ( in_array($input, array('grid','grid_2_column','plum','plum_3_column', 'slide_layout') ) )
 			return $input;
 		else 
 			return '';	
@@ -42,6 +42,7 @@
 						'plum' => __('Plum Theme Layout','plum'),
 						'plum_3_column' => __('Plum Theme Layout (3 Columns)','plum'),
 						'grid_2_column' => __('Grid - 2 Column','plum'),
+                        'slide_layout' => __('Slide Layout', 'plum')
 					)
 			)
 	);
@@ -168,5 +169,5 @@
 	);	
 	
 }
-add_action('customizer_register', 'plum_customizer_register_layouts');
+add_action('customize_register', 'plum_customize_register_layouts');
  

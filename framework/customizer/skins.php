@@ -30,6 +30,7 @@ function plum_customize_register_skins( $wp_customize ) {
 	$skins = array( 'default' => __('Default(Plum)','plum'),
 					'orange' =>  __('Orange','plum'),
 					'green' => __('Green','plum'),
+                    'brown' => __('Brown', 'plum'),
 					);
 	
 	$wp_customize->add_control(
@@ -44,7 +45,7 @@ function plum_customize_register_skins( $wp_customize ) {
 	);
 	
 	function plum_sanitize_skin( $input ) {
-		if ( in_array($input, array('default','orange','green') ) )
+		if ( in_array($input, array('default','orange','green', 'brown') ) )
 			return $input;
 		else
 			return '';

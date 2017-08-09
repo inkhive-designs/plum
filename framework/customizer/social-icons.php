@@ -21,7 +21,7 @@
 				);
 
 	$social_icon_styles = array(
-	        'none' => __('Deafault', 'plum'),
+	        'none' => __('Default', 'plum'),
             'style1' => __('Style 1', 'plum'),
             'style2' => __('Style 2', 'plum'),
             'style3' => __('Style 3', 'plum')
