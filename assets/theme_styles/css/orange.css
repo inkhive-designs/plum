@@ -57,14 +57,14 @@
 }
 body {
   font-family: "Source Sans Pro", sans-serif;
-  background: white;
+  background: #ffffff;
   word-wrap: break-word;
 }
 #page {
   overflow-x: hidden;
 }
 .mega-container {
-  background: white;
+  background: #ffffff;
   max-width: 1170px;
   margin: auto;
   margin-top: 20px;
@@ -97,7 +97,7 @@ a:hover {
 /* section titles */
 .section-title {
   font-weight: normal;
-  color: #333;
+  color: #333333;
   font-size: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -123,7 +123,7 @@ a:hover {
   padding-bottom: 10px;
 }
 #masthead {
-  color: #333;
+  color: #333333;
   min-height: 650px;
   position: relative;
   overflow-x: hidden;
@@ -148,7 +148,7 @@ a:hover {
   }
 }
 #masthead #searchicon {
-  color: white;
+  color: #ffffff;
   position: absolute;
   left: calc(50% - 11px);
   top: 83px;
@@ -204,16 +204,16 @@ a:hover {
   text-align: center;
 }
 #masthead #mobile-search label input[type=search]::-webkit-input-placeholder {
-  color: #444;
+  color: #444444;
 }
 #masthead #mobile-search label input[type=search]:-moz-placeholder {
-  color: #444;
+  color: #444444;
 }
 #masthead #mobile-search label input[type=search]::-moz-placeholder {
-  color: #444;
+  color: #444444;
 }
 #masthead #mobile-search label input[type=search]:-ms-input-placeholder {
-  color: #444;
+  color: #444444;
 }
 @media screen and (max-width: 767px) {
   #masthead #slickmenu {
@@ -256,10 +256,10 @@ a:hover {
   margin: 5px 0;
 }
 #masthead .masthead-inner .site-branding .site-title a {
-  color: white;
+  color: #ffffff;
 }
 #masthead .masthead-inner .site-branding .site-description {
-  color: white;
+  color: #ffffff;
   font-size: 14px;
   margin: 5px 0px;
 }
@@ -703,7 +703,7 @@ a:hover {
   margin-bottom: 40px;
 }
 #site-navigation.single ul li a {
-  color: #333;
+  color: #333333;
   font-weight: normal;
   position: relative;
   padding: 15px 15px;
@@ -731,7 +731,7 @@ a:hover {
 }
 #site-navigation.single ul li a:hover {
   background: #f2f2f2;
-  color: #333;
+  color: #333333;
   transition: 0.4s all ease 0.2s;
   -webkit-transition: 0.4s all ease 0.2s;
   -moz-transition: 0.4s all ease 0.2s;
@@ -768,7 +768,7 @@ a:hover {
 }
 #site-navigation.single ul li ul li a {
   background: #f2f2f2;
-  color: #333;
+  color: #333333;
 }
 #site-navigation.single ul li ul li a:after {
   content: none;
@@ -795,7 +795,7 @@ a:hover {
 }
 #site-navigation.single ul li:hover a {
   background: #f2f2f2;
-  color: #333;
+  color: #333333;
 }
 #site-navigation.single ul li:hover a:after {
   transform: translateY(-46px);
@@ -839,16 +839,16 @@ a:hover {
 }
 .pagination ul > li > a:hover {
   color: #d7722d;
-  background: white;
+  background: #ffffff;
 }
 .pagination .current {
   background: #d7722d;
-  color: white;
+  color: #ffffff;
   cursor: auto;
 }
 .pagination .current:hover {
   background: #d7722d;
-  color: white;
+  color: #ffffff;
 }
 .pagination ul  > li  > a,
 .pagination ul  > li  > span {
@@ -857,16 +857,16 @@ a:hover {
   line-height: 20px;
   text-decoration: none;
   margin-right: 5px;
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid rgba(215, 114, 45, 0.5);
   border-radius: 3px;
   display: inline-block;
-  color: #333;
+  color: #333333;
 }
 .pagination ul  > li  > a:hover,
 .pagination ul  > li  > span:hover {
   background: #d7722d;
-  color: white;
+  color: #ffffff;
 }
 .social-icons {
   background: rgba(215, 114, 45, 0.5);
@@ -914,28 +914,19 @@ a:hover {
   border-right: solid 90px rgba(215, 114, 45, 0.5);
   z-index: 5;
 }
-.social-icons a {
-  font-size: 17px;
-  display: inline-block;
+.social-icons .none {
   color: rgba(255, 255, 255, 0.3);
-  float: none;
-  margin-right: 6px;
   transition: ease 0.2s;
   -webkit-transition: ease 0.2s;
   -moz-transition: ease 0.2s;
   -ms-transition: ease 0.2s;
   -o-transition: ease 0.2s;
-  width: 46px;
-  height: 46px;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 7px;
   border: solid 4px rgba(230, 230, 230, 0.3);
   border-radius: 50%;
 }
-.social-icons a:hover {
-  color: white;
-  border-color: white;
+.social-icons .none:hover {
+  color: #ffffff;
+  border-color: #ffffff;
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -953,6 +944,83 @@ a:hover {
   .social-icons:after {
     content: none;
   }
+}
+.common {
+  font-size: 17px;
+  display: inline-block;
+  float: none;
+  margin-right: 6px;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 7px;
+}
+.style1 {
+  color: rgba(255, 255, 255, 0.3);
+  transition: ease 0.2s;
+  -webkit-transition: ease 0.2s;
+  -moz-transition: ease 0.2s;
+  -ms-transition: ease 0.2s;
+  -o-transition: ease 0.2s;
+  border: solid 4px rgba(230, 230, 230, 0.3);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+.style1:hover {
+  animation-name: hvr-push;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  color: #ffffff;
+  background: #d7722d;
+  border-color: #ffffff;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.style2 {
+  padding-top: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.style2:hover {
+  transform: scale(1.2);
+  transition: all ease 0.5s;
+  background-color: #ffffff;
+  color: #d7722d;
+}
+.style3 {
+  border: solid 2px #d7722d;
+  font-size: 20px;
+  transform: translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+.style3:hover {
+  color: #ffffff;
+}
+.style3:hover:before {
+  transform: scaleX(1);
+}
+.style3:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(215, 114, 45, 0.5);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 /* Single Posts Area */
 #primary {
@@ -972,7 +1040,7 @@ a:hover {
 }
 #primary-mono h1.entry-title {
   font-weight: normal;
-  color: #333;
+  color: #333333;
   font-size: 34px;
   margin-top: 0px;
   padding: 10px;
@@ -995,7 +1063,7 @@ a:hover {
 }
 #primary-mono .entry-meta a,
 #primary-mono .entry-footer a {
-  color: #333;
+  color: #333333;
   text-decoration: underline;
 }
 #primary-mono .entry-meta a:hover,
@@ -1032,7 +1100,7 @@ a:hover {
   margin-right: 6px;
 }
 #primary-mono .entry-content {
-  color: #333;
+  color: #333333;
   line-height: 1.7em;
   font-size: 14px;
 }
@@ -1089,7 +1157,7 @@ a:hover {
 #secondary h1.widget-title {
   font-weight: normal;
   text-transform: uppercase;
-  color: #333;
+  color: #333333;
   font-size: 18px;
   margin-bottom: 20px;
   margin-top: 0px;
@@ -1108,7 +1176,7 @@ a:hover {
   font-size: 14px;
 }
 #secondary .widget a {
-  color: #333;
+  color: #333333;
   font-weight: normal;
   transition: 0.4s all ease;
   -webkit-transition: 0.4s all ease;
@@ -1256,7 +1324,7 @@ a:hover {
 }
 #secondary button {
   background: #d9d9d9;
-  color: #333;
+  color: #333333;
 }
 #secondary input[type=text],
 #secondary input[type=search],
@@ -1264,7 +1332,7 @@ a:hover {
   background: #f2f2f2;
   border: solid 1px #bc6224;
   outline: none;
-  color: #333;
+  color: #333333;
 }
 #secondary input[type=text]::-webkit-input-placeholder,
 #secondary input[type=search]::-webkit-input-placeholder,
@@ -1298,7 +1366,7 @@ a:hover {
 #respond textarea {
   background: #f2f2f2;
   border: solid 1px #cccccc;
-  color: #333;
+  color: #333333;
   outline: none;
 }
 #respond .comment-form-author,
@@ -1323,7 +1391,7 @@ a:hover {
 #respond .comment-form-url label,
 #respond .comment-form-comment label {
   background: #d7722d;
-  color: white;
+  color: #ffffff;
   border-bottom: solid 1px #d7722d;
   padding: 5px;
   margin-right: -5px;
@@ -1343,7 +1411,7 @@ a:hover {
 }
 #respond .comment-notes,
 #respond .logged-in-as {
-  color: #333;
+  color: #333333;
 }
 #comments {
   margin-top: 55px;
@@ -1378,7 +1446,7 @@ a:hover {
   font-weight: normal;
 }
 #comments .vcard img {
-  border: solid 4px white;
+  border: solid 4px #ffffff;
   border-radius: 5px;
   margin: 0 10px 10px 0;
 }
@@ -1402,7 +1470,7 @@ a:hover {
 }
 /* Footer Sidebar */
 #footer-sidebar {
-  background: #ddd;
+  background: #dddddd;
   border-top: solid 3px #e5d4e7;
   clear: both;
 }
@@ -1422,7 +1490,7 @@ a:hover {
 #footer-sidebar .footer-column .widget {
   color: #ffffff;
   font-size: 13px;
-  background: white;
+  background: #ffffff;
   padding: 15px;
   margin-top: 25px;
   border-radius: 5px;
@@ -1477,7 +1545,7 @@ a:hover {
 }
 #footer-sidebar .footer-column button {
   background: #9a501d;
-  color: white;
+  color: #ffffff;
 }
 #footer-sidebar .footer-column input[type=text],
 #footer-sidebar .footer-column input[type=search],
@@ -1485,7 +1553,7 @@ a:hover {
   background: #b86023;
   border: solid 1px #b05b21;
   outline: none;
-  color: white;
+  color: #ffffff;
 }
 #footer-sidebar .footer-column input[type=text]::-webkit-input-placeholder,
 #footer-sidebar .footer-column input[type=search]::-webkit-input-placeholder,
@@ -1581,7 +1649,7 @@ a:hover {
   text-align: center;
 }
 #colophon a {
-  color: white;
+  color: #ffffff;
   text-decoration: underline;
 }
 /* featured Posts */
@@ -1610,7 +1678,7 @@ a:hover {
 .eta .fg-item-container .post-details h3 {
   text-align: center;
   background: #d7722d;
-  color: white;
+  color: #ffffff;
   width: 100%;
   padding: 15px 10px;
   font-size: 15px;
@@ -2042,7 +2110,7 @@ p.demo_store {
   padding: 1em 0;
   text-align: center;
   background-color: #d7722d;
-  color: white;
+  color: #ffffff;
   z-index: 99998;
   box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
 }
@@ -2063,7 +2131,7 @@ p.demo_store {
   text-align: center;
   line-height: 1;
   border-radius: 100%;
-  color: #333 !important;
+  color: #333333 !important;
   text-decoration: none;
   font-weight: 700;
   border: 0;
@@ -2079,7 +2147,7 @@ p.demo_store {
   margin: 0 0 2em !important;
   position: relative;
   background-color: #f2f2f2;
-  color: #333;
+  color: #333333;
   list-style: none outside !important;
   width: auto;
   overflow: auto;
@@ -2129,7 +2197,7 @@ p.demo_store {
 }
 .woocommerce small.note {
   display: block;
-  color: #333;
+  color: #333333;
   font-size: .857em;
   margin-top: 10px;
 }
@@ -2138,7 +2206,7 @@ p.demo_store {
   padding: 0;
   font-size: 1em;
   text-align: left;
-  color: #333;
+  color: #333333;
   background: #f5f5f5;
   border-bottom: solid 1px #e6e6e6;
   padding: 5px 10px;
@@ -2184,7 +2252,7 @@ p.demo_store {
   top: 5px;
   right: 5px;
   background: rgba(215, 114, 45, 0.9);
-  color: white;
+  color: #ffffff;
   padding: 10px;
   z-index: 99;
 }
@@ -2195,7 +2263,7 @@ p.demo_store {
   padding: 10px;
   margin: 0;
   font-size: 16px;
-  color: #333;
+  color: #333333;
   font-weight: bold;
   text-align: center;
 }
@@ -2235,7 +2303,7 @@ p.demo_store {
 }
 .woocommerce ul.products li.product .button:hover {
   background: #d7722d;
-  color: white;
+  color: #ffffff;
 }
 .woocommerce ul.products li.product .price {
   color: #d7722d;
@@ -2261,7 +2329,7 @@ p.demo_store {
 .woocommerce .woocommerce-result-count {
   margin: 0 0 1em;
   font-size: 13px;
-  color: #333;
+  color: #333333;
   font-weight: lighter;
 }
 .woocommerce .woocommerce-ordering {
@@ -2316,13 +2384,13 @@ p.demo_store {
   padding: 7px 12px;
   min-width: 25px;
   display: block;
-  color: #333;
+  color: #333333;
 }
 .woocommerce nav.woocommerce-pagination ul li span.current,
 .woocommerce nav.woocommerce-pagination ul li a:hover,
 .woocommerce nav.woocommerce-pagination ul li a:focus {
   background: #f2f2f2;
-  color: #333;
+  color: #333333;
 }
 /**
  * Star ratings
@@ -2342,7 +2410,7 @@ p.demo_store {
 }
 .star-rating:before {
   content: "\f005\f005\f005\f005\f005";
-  color: #333;
+  color: #333333;
   top: 0;
   left: 0;
   float: left;
@@ -2510,7 +2578,7 @@ ol.commentlist {
   font-weight: 700;
   border-radius: 3px;
   left: auto;
-  color: #333;
+  color: #333333;
   background-color: #ebebeb;
   border: 0;
   white-space: nowrap;
@@ -2554,21 +2622,21 @@ ol.commentlist {
 .woocommerce #respond input#submit:hover {
   text-decoration: none;
   background-image: none;
-  color: #333;
+  color: #333333;
 }
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt,
 .woocommerce #respond input#submit.alt {
   background-color: #d7722d;
-  color: #333;
+  color: #333333;
   -webkit-font-smoothing: antialiased;
 }
 .woocommerce a.button.alt:hover,
 .woocommerce button.button.alt:hover,
 .woocommerce input.button.alt:hover,
 .woocommerce #respond input#submit.alt:hover {
-  color: #333;
+  color: #333333;
 }
 .woocommerce a.button.alt.disabled,
 .woocommerce button.button.alt.disabled,
@@ -2595,7 +2663,7 @@ ol.commentlist {
 .woocommerce input.button.alt:disabled[disabled]:hover,
 .woocommerce #respond input#submit.alt:disabled[disabled]:hover {
   background-color: #d7722d;
-  color: #333;
+  color: #333333;
 }
 .woocommerce a.button:disabled,
 .woocommerce button.button:disabled,
@@ -2626,7 +2694,7 @@ ol.commentlist {
 .woocommerce input.button:disabled[disabled]:hover,
 .woocommerce #respond input#submit:disabled[disabled]:hover {
   color: inherit;
-  background-color: #333;
+  background-color: #333333;
 }
 .woocommerce .cart .button,
 .woocommerce .cart input.button {
@@ -2650,7 +2718,7 @@ ol.commentlist {
 }
 .woocommerce a.added_to_cart:hover {
   background: #d7722d;
-  color: white;
+  color: #ffffff;
 }
 /**
  * Product Page
@@ -2677,7 +2745,7 @@ ol.commentlist {
 }
 .woocommerce div.product .entry-summary {
   margin-top: 0px;
-  color: #333;
+  color: #333333;
 }
 @media screen and (min-width: 768px) {
   .woocommerce div.product .entry-summary {
@@ -2691,7 +2759,7 @@ ol.commentlist {
   height: 23px;
 }
 .woocommerce div.product .woocommerce-review-link {
-  color: #333;
+  color: #333333;
   padding: 4px;
   position: relative;
   top: 2px;
@@ -2809,7 +2877,7 @@ ol.commentlist {
   display: inline-block;
   padding: .5em 0;
   font-weight: 700;
-  color: #333;
+  color: #333333;
   text-decoration: none;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
@@ -2825,10 +2893,10 @@ ol.commentlist {
   text-shadow: inherit;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active:before {
-  box-shadow: 2px 2px 0 #333;
+  box-shadow: 2px 2px 0 #333333;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active:after {
-  box-shadow: -2px 2px 0 #333;
+  box-shadow: -2px 2px 0 #333333;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs:before {
   position: absolute;
@@ -2900,7 +2968,7 @@ ol.commentlist {
 }
 .woocommerce div.product form.cart .variations label {
   font-weight: bold;
-  color: #333;
+  color: #333333;
   font-size: 16px;
   display: inline-block;
   padding-right: 0;
@@ -2982,7 +3050,7 @@ ol.commentlist {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: white;
+  background: #ffffff;
   border: 1px solid #e6e6e6;
   padding: 6px 6px 5px;
   margin: 0 4px 0 0;
@@ -3025,7 +3093,7 @@ ol.commentlist {
   position: relative;
   top: 2px;
   font-size: 15px;
-  color: #333;
+  color: #333333;
 }
 .woocommerce-cart .cart-collaterals .cart_totals h2 {
   font-size: 15px;
@@ -3061,7 +3129,7 @@ ol.commentlist {
   line-height: 2em;
 }
 .woocommerce-cart .cart-collaterals .cart_totals table small {
-  color: #333;
+  color: #333333;
 }
 .woocommerce-cart .cart-collaterals .cart_totals table select {
   width: 100%;
@@ -3248,7 +3316,7 @@ form .form-row textarea {
   border: solid 1px #ebebeb;
 }
 form .form-row select {
-  background: white;
+  background: #ffffff;
   border: solid 1px #ebebeb;
   outline: none;
 }
@@ -3334,7 +3402,7 @@ p.woocommerce-shipping-contents {
   clear: both;
 }
 .woocommerce-checkout #payment {
-  background: white;
+  background: #ffffff;
   border-radius: 5px;
 }
 .woocommerce-checkout #payment ul.payment_methods {
@@ -3375,7 +3443,7 @@ p.woocommerce-shipping-contents {
   border-radius: 2px;
   line-height: 1.5;
   background-color: #f2f2f2;
-  color: #333;
+  color: #333333;
 }
 .woocommerce-checkout #payment div.payment_box input.input-text,
 .woocommerce-checkout #payment div.payment_box textarea {
@@ -3384,19 +3452,19 @@ p.woocommerce-shipping-contents {
 }
 .woocommerce-checkout #payment div.payment_box input.input-text::-webkit-input-placeholder,
 .woocommerce-checkout #payment div.payment_box textarea::-webkit-input-placeholder {
-  color: #333;
+  color: #333333;
 }
 .woocommerce-checkout #payment div.payment_box input.input-text:-moz-placeholder,
 .woocommerce-checkout #payment div.payment_box textarea:-moz-placeholder {
-  color: #333;
+  color: #333333;
 }
 .woocommerce-checkout #payment div.payment_box input.input-text::-moz-placeholder,
 .woocommerce-checkout #payment div.payment_box textarea::-moz-placeholder {
-  color: #333;
+  color: #333333;
 }
 .woocommerce-checkout #payment div.payment_box input.input-text:-ms-input-placeholder,
 .woocommerce-checkout #payment div.payment_box textarea:-ms-input-placeholder {
-  color: #333;
+  color: #333333;
 }
 .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number,
 .woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry,
@@ -3448,7 +3516,7 @@ p.woocommerce-shipping-contents {
 }
 .woocommerce-checkout #payment div.payment_box span.help {
   font-size: .857em;
-  color: #333;
+  color: #333333;
   font-weight: normal;
 }
 .woocommerce-checkout #payment div.payment_box .form-row {
@@ -3487,7 +3555,7 @@ p.woocommerce-shipping-contents {
 .woocommerce-checkout .select2-drop-active,
 .woocommerce-checkout .select2-drop {
   border: solid 1px #e6e6e6;
-  background: white;
+  background: #ffffff;
 }
 .woocommerce-checkout .woocommerce-billing-fields h3,
 .woocommerce-checkout .woocommerce-shipping-fields h3 {
@@ -3539,7 +3607,7 @@ p.woocommerce-shipping-contents {
 .woocommerce ul.cart_list li .amount,
 .woocommerce ul.product_list_widget li .amount {
   font-size: 12px;
-  color: #333;
+  color: #333333;
 }
 .woocommerce ul.cart_list li a.remove,
 .woocommerce ul.product_list_widget li a.remove {
@@ -3581,17 +3649,17 @@ p.woocommerce-shipping-contents {
   margin: 0 !important;
 }
 .woocommerce del {
-  color: #333;
+  color: #333333;
 }
 .woocommerce del .amount {
-  color: #333;
+  color: #333333;
 }
 .woocommerce ul.cart_list li img {
   width: 72px;
 }
 .woocommerce.widget_shopping_cart .total,
 .woocommerce .widget_shopping_cart .total {
-  border-top: 1px double white;
+  border-top: 1px double #ffffff;
   padding: 4px 0 0;
   float: right;
 }

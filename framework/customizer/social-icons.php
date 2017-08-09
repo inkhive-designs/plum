@@ -19,7 +19,41 @@
 					'flickr' => __('Flickr','plum'),
 					'pinterest-p'	=> __('Pinterest', 'plum'),
 				);
-				
+
+	$social_icon_styles = array(
+	        'none' => __('Deafault', 'plum'),
+            'style1' => __('Style 1', 'plum'),
+            'style2' => __('Style 2', 'plum'),
+            'style3' => __('Style 3', 'plum')
+        );
+
+	$wp_customize->add_setting('plum_social_icon_style', array(
+	    'default' => 'none',
+        'sanitize_callback' => 'plum_sanitize_social_style'
+    ) );
+
+	function plum_sanitize_social_style($input) {
+	    $social_icon_styles = array(
+	        'none',
+            'style1',
+            'style2',
+            'style3',
+        );
+	    if ( in_array($input, $social_icon_styles))
+	        return $input;
+	    else
+	        return '';
+    }
+
+    $wp_customize->add_control('plum_social_icon_style', array(
+         'setting' => 'plum_social_icon_style',
+         'section' => 'plum_social_section',
+         'label' => __('Social Icon Effects', 'plum'),
+         'type' => 'select',
+         'choices' => $social_icon_styles,
+       )
+    );
+
 	$social_count = count($social_networks);
 				
 	for ($x = 1 ; $x <= ($social_count - 4) ; $x++) :
