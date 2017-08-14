@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-6 col-sm-6 grid slide'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-6 col-sm-6 grid grid_2_column slide'); ?>>
 
     <div class="featured-thumb col-md-12">
         <?php if (has_post_thumbnail()) : ?>
