@@ -46,6 +46,8 @@
 	<?php get_template_part('framework/featured-components/featured', 'eta'); ?>
 	<?php get_template_part('framework/featured-components/featured', 'zeta'); ?>
 
+    <?php get_template_part('modules/testimonial/testimonial', 'none'); ?>
+
 	
 	<div class="mega-container">
 		

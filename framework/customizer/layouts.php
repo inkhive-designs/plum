@@ -3,8 +3,6 @@
 	// Layout and Design
 	$wp_customize->add_panel( 'plum_design_panel', array(
 	    'priority'       => 40,
-	    'capability'     => 'edit_theme_options',
-	    'theme_supports' => '',
 	    'title'          => __('Design & Layout','plum'),
 	) );
 	
