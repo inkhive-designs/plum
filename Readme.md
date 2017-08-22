@@ -154,7 +154,7 @@ Source: https://pixabay.com/en/service/terms/
  * Switched to a New Framework
  * Minor Bug Fixes
  
- ### 1.1.7
+ ### 1.1.8
  
  * Added More Options for Front Page
  * Social Icon Effects
