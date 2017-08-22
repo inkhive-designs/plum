@@ -68,17 +68,26 @@ function plum_custom_css_mods() {
         endif;
     endif;
 
-    if (get_theme_mod('plum_hero_background_image')) :
+    if (get_theme_mod('plum_hero_background_image') !='') :
         $image = get_theme_mod('plum_hero_background_image');
         $custom_css .= "#hero {
                     background-image: url('" . $image . "');
+                        background-size: cover;
                 }";
     endif;
+
     if (get_theme_mod('plum_hero_background_image')) :
         $image1 = get_theme_mod('plum_hero2_background_image');
         $custom_css .= "#hero2 {
                     background-image: url('" . $image1 . "');
+                        background-size: cover;
                 }";
+    endif;
+
+    if( !is_home() && is_front_page()) :
+        if(get_theme_mod('plum_disable_comments', ture)) :
+            $custom_css .= "#comments { display:none; }";
+        endif;
     endif;
 
     wp_add_inline_style( 'plum-main-theme-style', wp_strip_all_tags($custom_css) );

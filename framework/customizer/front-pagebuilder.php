@@ -18,17 +18,18 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         public $type = 'plum-blank';
 
         public function render_content() { ?>
-            <!---Define any custom control --->
+            <strong><?php echo esc_html( $this->description ); ?></strong>
         <?php
         }
     }
 
-    $wp_customize->add_section('plum_basic_settings_info_section',
+
+    //Basic Settings
+    $wp_customize->add_section('plum_basic_settings_section',
         array(
-            'title' => __('Basic Settings Info', 'plum'),
-            'priority' => 10,
+            'title' => __('Basic Settings', 'plum'),
+            'priority' => 20,
             'panel' => 'plum_fpage_builder',
-            'description' => __('You need to create a static page to apply all these changes.', 'plum'),
         )
     );
 
@@ -38,18 +39,10 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         new Plum_Review_Control(
             $wp_customize,
             'plum_info_set', array(
-                'section' => 'plum_basic_settings_info_section',
+                'section' => 'plum_basic_settings_section',
                 'type' => 'plum-blank',
+                'description' => __('You need to create a Static Page to apply all these changes.', 'plum')
             )
-        )
-    );
-
-    //Basic Settings
-    $wp_customize->add_section('plum_basic_settings_section',
-        array(
-            'title' => __('Basic Settings', 'plum'),
-            'priority' => 20,
-            'panel' => 'plum_fpage_builder',
         )
     );
 
@@ -64,6 +57,23 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
             'label' => __('Disable Page Title', 'plum'),
             'description' => __('Default: Enabled. Check to Disable Page Title.', 'plum'),
             'type' => 'checkbox'
+        )
+    );
+
+    $wp_customize->add_setting('plum_disable_comments',
+        array(
+            'sanitize_callback' => 'plum_sanitize_checkbox'
+        )
+    );
+
+    $wp_customize->add_control('plum_disable_comments',
+        array(
+            'setting' => 'plum_disable_comments',
+            'section' => 'plum_basic_settings_section',
+            'label' => __('Disable Comments Box', 'plum'),
+            'description' => __('Comment Box will be disappear from your Static Page', 'plum'),
+            'type' => 'checkbox',
+            'default' => false,
         )
     );
 
@@ -99,7 +109,7 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         'plum_content_font_size', array(
             'settings' => 'plum_content_font_size',
             'label' => __( 'Content Font Size','plum' ),
-            'description' => __('Select Font Size. This is only for the Posts and Pages area. Not for Blog Page or archives.', 'plum'),
+            'description' => __('Select Font Size. This is only for the content on Static Page area. Not for Blog Posts, Pages or Archives.', 'plum'),
             'section'  => 'plum_basic_settings_section',
             'type'     => 'select',
             'choices' => $font_size
@@ -110,7 +120,7 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
     //HERO 1
     $wp_customize->add_section('plum_hero1_section',
         array(
-            'title' => __('HERO 1', 'plum'),
+            'title' => __('HERO (Above Content)', 'plum'),
             'priority' => 20,
             'panel' => 'plum_fpage_builder',
         )
@@ -149,7 +159,12 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         )
     );
 
-    $wp_customize->add_setting('plum_hero1_selectpage');
+    $wp_customize->add_setting('plum_hero1_selectpage',
+        array(
+                'sanitize_callback' => 'absint'
+        )
+    );
+
     $wp_customize->add_control('plum_hero1_selectpage',
         array(
             'setting' => 'plum_hero1_selectpage',
@@ -157,6 +172,35 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
             'label' => __('Title', 'plum'),
             'description' => __('Select a Page to display Title', 'plum'),
             'type' => 'dropdown-pages',
+            'active_callback' => 'plum_hero_active_callback'
+        )
+    );
+
+    $wp_customize->add_control(
+        new Plum_Review_Control(
+            $wp_customize,
+            'plum_info_set', array(
+                'section' => 'plum_hero1_section',
+                'type' => 'plum-blank',
+                'description' => __('You should select excerpt if you have large content on your page.', 'plum'),
+                'active_callback' => 'plum_hero_active_callback'
+            )
+        )
+    );
+
+    $wp_customize->add_setting('plum_hero1_full_content',
+        array(
+            'sanitize_callback' => 'plum_sanitize_checkbox'
+        )
+    );
+
+    $wp_customize->add_control('plum_hero1_full_content',
+        array(
+            'setting' => 'plum_hero1_full_content',
+            'section' => 'plum_hero1_section',
+            'label' => __('Show Full Content', 'plum'),
+            'type' => 'checkbox',
+            'default' => false,
             'active_callback' => 'plum_hero_active_callback'
         )
     );
@@ -172,6 +216,7 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
             'setting' => 'plum_hero1_button',
             'section' => 'plum_hero1_section',
             'label' => __('Button Name', 'plum'),
+            'description' => __('Leave blank to disable Button.', 'plum'),
             'type' => 'text',
             'active_callback' => 'plum_hero_active_callback'
         )
@@ -185,7 +230,7 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
     //HERO 2
     $wp_customize->add_section('plum_hero2_section',
         array(
-            'title' => __('HERO 2', 'plum'),
+            'title' => __('HERO (Below Content)', 'plum'),
             'priority' => 25,
             'panel' => 'plum_fpage_builder',
         )
@@ -226,7 +271,12 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         )
     );
 
-    $wp_customize->add_setting('plum_hero2_selectpage');
+    $wp_customize->add_setting('plum_hero2_selectpage',
+        array(
+            'sanitize_callback' => 'absint'
+        )
+    );
+    
     $wp_customize->add_control('plum_hero2_selectpage',
         array(
             'setting' => 'plum_hero2_selectpage',
@@ -235,6 +285,35 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
             'description' => __('Select a Page to display Title', 'plum'),
             'type' => 'dropdown-pages',
             'active_callback' => 'plum_hero_eta_active_callback'
+        )
+    );
+
+    $wp_customize->add_control(
+        new Plum_Review_Control(
+            $wp_customize,
+            'plum_info_set', array(
+                'section' => 'plum_hero2_section',
+                'type' => 'plum-blank',
+                'description' => __('You should select excerpt if you have large content on your page.', 'plum'),
+                'active_callback' => 'plum_hero_active_callback'
+            )
+        )
+    );
+
+    $wp_customize->add_setting('plum_hero2_full_content',
+        array(
+            'sanitize_callback' => 'plum_sanitize_checkbox'
+        )
+    );
+
+    $wp_customize->add_control('plum_hero2_full_content',
+        array(
+            'setting' => 'plum_hero2_full_content',
+            'section' => 'plum_hero2_section',
+            'label' => __('Show Full Content', 'plum'),
+            'type' => 'checkbox',
+            'default' => false,
+            'active_callback' => 'plum_hero_active_callback'
         )
     );
 
@@ -248,6 +327,7 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
             'setting' => 'plum_hero2_button',
             'section' => 'plum_hero2_section',
             'label' => __('Button Name', 'plum'),
+            'description' => __('Leave blank to disable Button.', 'plum'),
             'type' => 'text',
             'active_callback' => 'plum_hero_eta_active_callback'
         )
