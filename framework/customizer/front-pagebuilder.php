@@ -12,17 +12,6 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         )
     );
 
-    //removed controls
-    class Plum_Review_Control extends WP_Customize_Control {
-
-        public $type = 'plum-blank';
-
-        public function render_content() { ?>
-            <strong><?php echo esc_html( $this->description ); ?></strong>
-        <?php
-        }
-    }
-
 
     //Basic Settings
     $wp_customize->add_section('plum_basic_settings_section',
@@ -34,18 +23,24 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
     );
 
     //Basic Setting Info
-    $wp_customize->add_setting('plum_info_set');
-    $wp_customize->add_control(
-        new Plum_Review_Control(
-            $wp_customize,
-            'plum_info_set', array(
-                'section' => 'plum_basic_settings_section',
-                'type' => 'plum-blank',
-                'description' => __('You need to create a Static Page to apply all these changes.', 'plum')
-            )
-        )
-    );
-
+    $wp_customize->add_setting(
+			'plum_fpb',
+			array( 'sanitize_callback' => 'esc_textarea' )
+		);
+			
+	$wp_customize->add_control(
+	    new Plum_WP_Customize_Upgrade_Control(
+	        $wp_customize,
+	        'plum_fpb',
+	        array(
+	            'label' => __('Note','plum'),
+	            'description' => __('You need to set your homepage to a Static Front page in order to use any of these settings.','plum'),
+	            'section' => 'plum_basic_settings_section',
+	            'settings' => 'plum_fpb',			       
+	        )
+		)
+	);
+	
     $wp_customize->add_setting('plum_page_title',
         array(
                 'sanitize_callback' => 'plum_sanitize_checkbox'
@@ -70,8 +65,8 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         array(
             'setting' => 'plum_disable_comments',
             'section' => 'plum_basic_settings_section',
-            'label' => __('Disable Comments Box', 'plum'),
-            'description' => __('Comment Box will be disappear from your Static Page', 'plum'),
+            'label' => __('Enable Comments Box', 'plum'),
+            'description' => __('Comment Box will be enabled from your Static Page', 'plum'),
             'type' => 'checkbox',
             'default' => false,
         )
@@ -176,17 +171,6 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         )
     );
 
-    $wp_customize->add_control(
-        new Plum_Review_Control(
-            $wp_customize,
-            'plum_info_set', array(
-                'section' => 'plum_hero1_section',
-                'type' => 'plum-blank',
-                'description' => __('You should select excerpt if you have large content on your page.', 'plum'),
-                'active_callback' => 'plum_hero_active_callback'
-            )
-        )
-    );
 
     $wp_customize->add_setting('plum_hero1_full_content',
         array(
@@ -198,7 +182,7 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         array(
             'setting' => 'plum_hero1_full_content',
             'section' => 'plum_hero1_section',
-            'label' => __('Show Full Content', 'plum'),
+            'label' => __('Show Full Content insted of excerpt', 'plum'),
             'type' => 'checkbox',
             'default' => false,
             'active_callback' => 'plum_hero_active_callback'
@@ -288,18 +272,6 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         )
     );
 
-    $wp_customize->add_control(
-        new Plum_Review_Control(
-            $wp_customize,
-            'plum_info_set', array(
-                'section' => 'plum_hero2_section',
-                'type' => 'plum-blank',
-                'description' => __('You should select excerpt if you have large content on your page.', 'plum'),
-                'active_callback' => 'plum_hero_active_callback'
-            )
-        )
-    );
-
     $wp_customize->add_setting('plum_hero2_full_content',
         array(
             'sanitize_callback' => 'plum_sanitize_checkbox'
@@ -310,7 +282,7 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
         array(
             'setting' => 'plum_hero2_full_content',
             'section' => 'plum_hero2_section',
-            'label' => __('Show Full Content', 'plum'),
+            'label' => __('Show Full Content instead of excerpt', 'plum'),
             'type' => 'checkbox',
             'default' => false,
             'active_callback' => 'plum_hero_active_callback'

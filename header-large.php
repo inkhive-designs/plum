@@ -47,7 +47,7 @@
 	<?php get_template_part('framework/featured-components/featured', 'zeta'); ?>
 
     <?php if (!is_home() && is_front_page()) :
-    get_template_part('hero');
+    get_template_part('modules/hero/hero-top');
     endif;
 ?>
 
