@@ -46,8 +46,15 @@
 	<?php get_template_part('framework/featured-components/featured', 'eta'); ?>
 	<?php get_template_part('framework/featured-components/featured', 'zeta'); ?>
 
-	
-	<div class="mega-container">
+    <?php if (!is_home() && is_front_page()) :
+    get_template_part('hero');
+    endif;
+?>
+
+
+
+
+    <div class="mega-container">
 		
 		<?php if( class_exists('rt_slider') ) {
 			 rt_slider::render('slider', 'swiper' ); 

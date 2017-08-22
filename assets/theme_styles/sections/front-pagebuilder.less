@@ -1,0 +1,56 @@
+#hero, #hero2 {
+  overflow:auto;
+  padding:40px;
+  background-attachment:fixed;
+  margin:20px 0;
+  position: relative;
+  .h-content{
+    h1.title{
+      color:@onaccent;
+      margin:0;
+    }
+    .more-button{
+      color:@onaccent;
+      padding:13px 20px;
+      font-size:16px;
+      background:@accent;
+      top: 10px;
+      border:2px solid @accent;
+      position:relative;
+      z-index:999;
+      &:hover {
+        padding:13px 20px;
+        font-size:16px;
+        color:@accent;
+        border:2px solid @accent;
+        background:@onaccent;
+      }
+    }
+    .excerpt {
+      margin: 20px 0;
+      font-size: 17.5px;
+      color:@onaccent;
+    }
+  }
+  .f-image{
+
+  }
+}
+@media screen and (max-width:768px){
+  .h-content{
+    margin-bottom:30px;
+    .more-button{
+
+      &:hover {
+        padding:13px 20px;
+        font-size:16px;
+        color:@onaccent;
+        background:@content;
+      }
+    }
+
+  }
+  .f-image{
+    margin-top:45px;
+  }
+}

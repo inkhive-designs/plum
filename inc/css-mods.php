@@ -55,7 +55,33 @@ function plum_custom_css_mods() {
 		$custom_css .= "#masthead .custom-logo { transform: scale(".$val."); -webkit-transform: scale(".$val."); -moz-transform: scale(".$val."); -ms-transform: scale(".$val."); }";
 	endif;
 
-	wp_add_inline_style( 'plum-main-theme-style', wp_strip_all_tags($custom_css) );
+	if(!is_home() && is_front_page()):
+        if( get_theme_mod('plum_page_title', true)):
+            $custom_css .= "#primary-mono .entry-header { display:none; }";
+	    endif;
+	endif;
+
+    if (!is_home() && is_front_page()) :
+        if ( get_theme_mod('plum_content_font_size') ) :
+            $size = (get_theme_mod('plum_content_font_size'));
+            $custom_css .= "#primary-mono .entry-content { font-size:".$size.";}";
+        endif;
+    endif;
+
+    if (get_theme_mod('plum_hero_background_image')) :
+        $image = get_theme_mod('plum_hero_background_image');
+        $custom_css .= "#hero {
+                    background-image: url('" . $image . "');
+                }";
+    endif;
+    if (get_theme_mod('plum_hero_background_image')) :
+        $image1 = get_theme_mod('plum_hero2_background_image');
+        $custom_css .= "#hero2 {
+                    background-image: url('" . $image1 . "');
+                }";
+    endif;
+
+    wp_add_inline_style( 'plum-main-theme-style', wp_strip_all_tags($custom_css) );
 	
 }
 
