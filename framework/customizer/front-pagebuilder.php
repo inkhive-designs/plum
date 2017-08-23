@@ -285,7 +285,7 @@ function plum_customize_register_front_pagebuilder($wp_customize) {
             'label' => __('Show Full Content instead of excerpt', 'plum'),
             'type' => 'checkbox',
             'default' => false,
-            'active_callback' => 'plum_hero_active_callback'
+            'active_callback' => 'plum_hero_eta_active_callback'
         )
     );
 
