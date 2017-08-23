@@ -80,7 +80,7 @@ function plum_custom_css_mods() {
         $image1 = get_theme_mod('plum_hero2_background_image');
         $custom_css .= "#hero2 {
                     background-image: url('" . $image1 . "');
-                        background-size: cover;
+                    background-size: cover;
                 }";
     endif;
 

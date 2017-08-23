@@ -10,10 +10,6 @@
 
 	</div><!-- #content -->
 
-	<?php if (!is_home() && is_front_page()) :
-	    get_template_part('modules/hero/hero-bottom');
-	endif;
-	?>
 	<?php get_sidebar('footer'); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
