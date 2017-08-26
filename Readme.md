@@ -159,3 +159,8 @@ Source: https://pixabay.com/en/service/terms/
  * Added More Options for Front Page
  * Social Icon Effects
  * Minor Bug Fixes
+ 
+ ### 1.1.9
+ 
+ * More New Featured added
+ * Front page Optimized
