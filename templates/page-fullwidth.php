@@ -22,7 +22,7 @@ endif; ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+				<?php get_template_part( '/modules/content/content', 'page' ); ?>
 
 				<?php
 					if( is_front_page() && get_theme_mod('plum_disable_comments')) :

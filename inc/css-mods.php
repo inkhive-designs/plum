@@ -61,6 +61,12 @@ function plum_custom_css_mods() {
 	    endif;
 	endif;
 
+	if(!is_home()):
+        if( get_theme_mod('plum_contact_page_title', true)):
+            $custom_css .= "#primary-mono .contact-us .entry-header { display:none; }";
+	    endif;
+	endif;
+
     if (!is_home() && is_front_page()) :
         if ( get_theme_mod('plum_content_font_size') ) :
             $size = (get_theme_mod('plum_content_font_size'));

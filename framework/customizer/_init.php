@@ -35,6 +35,7 @@ require_once get_template_directory().'/framework/customizer/posts-eta.php';
 require_once get_template_directory().'/framework/customizer/posts-zeta.php';
 require_once get_template_directory().'/framework/customizer/skins.php';
 require_once get_template_directory().'/framework/customizer/social-icons.php';
+require_once get_template_directory().'/framework/customizer/static-page.php';
 require_once get_template_directory().'/framework/customizer/misc-scripts.php';
 
 
