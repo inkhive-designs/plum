@@ -40,7 +40,7 @@ function plum_customize_register_static_page($wp_customize) {
         )
     );
 
-    //Page Text
+    //Contact Us Details
     $wp_customize->add_setting('plum_select_contact_page',
         array(
             'sanitize_callback' => 'absint'
@@ -138,7 +138,7 @@ function plum_customize_register_static_page($wp_customize) {
         array(
             'setting' => 'plum_button_url',
             'section' => 'plum_static_page_section',
-            'label' => __('Button ', 'plum'),
+            'label' => __('Button URL', 'plum'),
             'description' => __('Enter button URL with: http://', 'plum'),
             'type' => 'url',
         )

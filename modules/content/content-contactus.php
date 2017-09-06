@@ -20,7 +20,7 @@
             </div>
         <?php endif; ?>
 
-        <?php if(get_theme_mod('plum_address_set') != ''): ?>
+        <?php if(get_theme_mod('plum_select_contact_page') != ''): ?>
         <div class="about-address col-md-6 col-sm-6">
             <div class="address">
                 <?php
