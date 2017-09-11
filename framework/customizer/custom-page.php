@@ -1,9 +1,9 @@
 <?php
 function plum_customize_register_static_page($wp_customize) {
     //Static Page
-    $wp_customize->add_section('plum_static_page_section',
+    $wp_customize->add_section('plum_custom_page_section',
         array(
-            'title' => __('Static Page', 'plum'),
+            'title' => __('Custom Pages', 'plum'),
             'priority' => 100,
         )
     );
@@ -16,7 +16,7 @@ function plum_customize_register_static_page($wp_customize) {
     $wp_customize->add_control('plum_contact_page_title',
         array(
             'setting' => 'plum_contact_page_title',
-            'section' => 'plum_static_page_section',
+            'section' => 'plum_custom_page_section',
             'label' => __('Disable Page Title', 'plum'),
             'description' => __('Default: Enabled. Check to Disable Page Title.', 'plum'),
             'type' => 'checkbox'
@@ -33,7 +33,7 @@ function plum_customize_register_static_page($wp_customize) {
     $wp_customize->add_control('plum_form_shortcode_set',
         array(
             'setting' => 'plum_form_shortcode_set',
-            'section' => 'plum_static_page_section',
+            'section' => 'plum_custom_page_section',
             'label' => __('Shortccode', 'plum'),
             'description' => __('Paste form shortcode here to display form.', 'plum'),
             'type' => 'textarea',
@@ -50,7 +50,7 @@ function plum_customize_register_static_page($wp_customize) {
     $wp_customize->add_control('plum_select_contact_page',
         array(
             'setting' => 'plum_select_contact_page',
-            'section' => 'plum_static_page_section',
+            'section' => 'plum_custom_page_section',
             'label' => __('Contact Page', 'plum'),
             'description' => __('Select a Page to display Address Details', 'plum'),
             'type' => 'dropdown-pages',
@@ -67,9 +67,9 @@ function plum_customize_register_static_page($wp_customize) {
     $wp_customize->add_control('plum_static_selectpage',
         array(
             'setting' => 'plum_static_selectpage',
-            'section' => 'plum_static_page_section',
-            'label' => __('Detail Box', 'plum'),
-            'description' => __('Select a Page to display Detail Box', 'plum'),
+            'section' => 'plum_custom_page_section',
+            'label' => __('More Details Box', 'plum'),
+            'description' => __('Fetch more details from following page', 'plum'),
             'type' => 'dropdown-pages',
         )
     );
@@ -84,7 +84,7 @@ function plum_customize_register_static_page($wp_customize) {
     $wp_customize->add_control('plum_static_button',
         array(
             'setting' => 'plum_static_button',
-            'section' => 'plum_static_page_section',
+            'section' => 'plum_custom_page_section',
             'label' => __('Button Name', 'plum'),
             'type' => 'text',
         )
@@ -103,7 +103,7 @@ function plum_customize_register_static_page($wp_customize) {
             $wp_customize, 'plum_map_set',
             array (
                 'setting' => 'plum_map_set',
-                'section' => 'plum_static_page_section',
+                'section' => 'plum_custom_page_section',
                 'label' => __('Map Location Image', 'plum'),
                 'description' => __('Upload an image to display location in MAP. Image should be 788 X 414', 'plum'),
             )
@@ -120,7 +120,7 @@ function plum_customize_register_static_page($wp_customize) {
     $wp_customize->add_control('plum_button_text',
         array(
             'setting' => 'plum_button_text',
-            'section' => 'plum_static_page_section',
+            'section' => 'plum_custom_page_section',
             'label' => __('Button ', 'plum'),
             'description' => __('Enter button name', 'plum'),
             'type' => 'text',
@@ -137,7 +137,7 @@ function plum_customize_register_static_page($wp_customize) {
     $wp_customize->add_control('plum_button_url',
         array(
             'setting' => 'plum_button_url',
-            'section' => 'plum_static_page_section',
+            'section' => 'plum_custom_page_section',
             'label' => __('Button URL', 'plum'),
             'description' => __('Enter button URL with: http://', 'plum'),
             'type' => 'url',
