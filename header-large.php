@@ -46,7 +46,7 @@
 	<?php get_template_part('framework/featured-components/featured', 'eta'); ?>
 	<?php get_template_part('framework/featured-components/featured', 'zeta'); ?>
 
-    <?php if (!is_home() && is_front_page()) :
+    <?php if ((!is_home() && is_front_page() ) || is_page_template( 'templates/page-hero.php' )) :
     get_template_part('modules/hero/hero-top');
     endif;
 ?>

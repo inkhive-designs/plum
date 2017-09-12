@@ -1,4 +1,4 @@
-<?php if ( get_theme_mod('plum_hero_enable') && is_front_page() && !is_home() ) : ?>
+<?php if ( get_theme_mod('plum_hero_enable') ) : ?>
     <div id="hero" class="hero-content">
         <div class="layer"></div>
 		<div class="container hero-container">
