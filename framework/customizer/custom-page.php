@@ -1,12 +1,42 @@
-<?php
+<?php 
 function plum_customize_register_static_page($wp_customize) {
     //Static Page
-    $wp_customize->add_section('plum_custom_page_section',
+    $wp_customize->add_panel('plum_custom_page_panel',
         array(
             'title' => __('Custom Pages', 'plum'),
             'priority' => 100,
         )
     );
+    
+    $wp_customize->add_section('plum_custom_page_section',
+        array(
+            'title' => __('Contact Us', 'plum'),
+            'panel' => 'plum_custom_page_panel',
+        )
+    );
+    
+    //Info on how to use this
+    $wp_customize->add_setting(
+			'plum_cpw',
+			array( 'sanitize_callback' => 'esc_textarea' )
+		);
+			
+	$wp_customize->add_control(
+	    new Plum_WP_Customize_Upgrade_Control(
+	        $wp_customize,
+	        'plum_cpw',
+	        array(
+	            'label' => __('How to Create a Beautiful Contact us Page?','plum'),
+	            'description' => __('To do so, go to your Dashboard - Pages - Add New. <br/> 
+	            In the Add New Page, Give the Page a title and add some content to it if you want to. And then Set the template of the page to <strong>Contact Us</strong> from "Default Template". <br/><br/>
+	            Once you have done so, open the contact us page in your browser and click on Customize from the Admin Bar. Once you are in the Customizer you can Comeback to this section and finish designing your custom page.','plum'),
+	            'section' => 'plum_custom_page_section',
+	            'settings' => 'plum_cpw',			       
+	        )
+		)
+	);
+	
+	
 
     //Page Title Enable/Disable
     $wp_customize->add_setting('plum_contact_page_title',

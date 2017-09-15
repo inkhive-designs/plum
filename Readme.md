@@ -164,3 +164,11 @@ Source: https://pixabay.com/en/service/terms/
  
  * More New Featured added
  * Front page Optimized
+ 
+ ### 1.2.0
+ 
+ * More New Page Templates
+ * Customizer Now more user friendly
+ * Minor Bug Fixes
+ * Contact Us Page Layout Added
+ 
