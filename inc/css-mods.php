@@ -91,13 +91,15 @@ function plum_custom_css_mods() {
     endif;
 
     //Menu Alignment
-    if (get_theme_mod('plum_menu_alignment_set') == 'center') :
-        $custom_css .= ".menu-main-container ul { text-align: center; } .menu-main-container ul li { float: none;
-    display: inline-block; } ";
+    if(is_home() && is_front_page()) :
+        if (get_theme_mod('plum_menu_alignment_set') == 'center') :
+            $custom_css .= ".menu-main-container ul { text-align: center; } .menu-main-container ul li { float: none;
+        display: inline-block; } ";
 
-    elseif (get_theme_mod('plum_menu_alignment_set') == 'right') :
-        $custom_css .= ".menu-main-container ul li { float: right; }";
-
+        elseif (get_theme_mod('plum_menu_alignment_set') == 'right') :
+            $custom_css .= ".menu-main-container ul { text-align: right; } .menu-main-container ul li { float: none;
+        display: inline-block; } ";
+        endif;
     endif;
 
     wp_add_inline_style( 'plum-main-theme-style', wp_strip_all_tags($custom_css) );
