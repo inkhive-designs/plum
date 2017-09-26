@@ -147,6 +147,15 @@ function plum_widgets_init() {
 }
 add_action( 'widgets_init', 'plum_widgets_init' );
 
+function plum_custom_js() {
+    $custom_js = array (
+//        'menu_alignment'=> get_theme_mod('plum_menu_alignment_set'),
+    );
+
+    wp_localize_script('plum-custom-js', 'align', $custom_js);
+}
+add_action('wp_head', 'plum_custom_js');
+
 /**
  * Enqueue scripts and styles.
  */
