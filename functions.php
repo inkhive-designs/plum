@@ -251,4 +251,9 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/framework/tgmpa.php';
 
+/**
+ * Video widget
+ */
+require get_template_directory() . '/framework/widgets/plum-video.php';
+
 
