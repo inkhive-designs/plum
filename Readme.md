@@ -172,3 +172,7 @@ Source: https://pixabay.com/en/service/terms/
  * Minor Bug Fixes
  * Contact Us Page Layout Added
  
+ ### Version 1.3.0
+ 
+ * Fixed Slider Issues
+ 
