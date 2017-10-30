@@ -176,3 +176,10 @@ Source: https://pixabay.com/en/service/terms/
  
  * Fixed Slider Issues
  
+ ### Version 1.3.1
+ 
+ * Fixed Social icons and Site title/Description issues on mobile screen.
+ * Fixed Featured Posts Area CSS issues on mobile screen.
+ * Fixed Featured Posts Area 2 CSS issues on mobile screen. 
+ * Fixed 3-column Blog layout and Plum layout CSS issue.
+  
