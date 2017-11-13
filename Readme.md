@@ -3,8 +3,7 @@
 **Contributors:** (inkhive)  
 **Requires at least:** WordPress 4.4  
 **Tested up to:** WordPress 4.8  
-**Stable tag:** 1.1.1 
-**Version:** 1.1.1
+**Version:** 1.3.2
 **License:** GPL v3  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 **Tags:** custom-background, two-columns, one-column, custom-colors, flexible-header, theme-options, right-sidebar, grid-layout, custom-menu, threaded-comments, translation-ready, featured-images, blog, full-width-template, e-commerce, footer-widgets, entertainment, photography, featured-image-header
@@ -182,4 +181,8 @@ Source: https://pixabay.com/en/service/terms/
  * Fixed Featured Posts Area CSS issues on mobile screen.
  * Fixed Featured Posts Area 2 CSS issues on mobile screen. 
  * Fixed 3-column Blog layout and Plum layout CSS issue.
-  
+ 
+ ### Version 1.3.2
+ 
+ * Added Support For Footer Sidebar.
+ * Minor Bug Fixes. 

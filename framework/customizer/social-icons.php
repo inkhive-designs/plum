@@ -100,7 +100,7 @@
 					'vimeo-square',
 					'youtube',
 					'flickr',
-					'pinterest-p'
+					'pinterest-p',
 				);
 		if ( in_array($input, $social_networks) )
 			return $input;
