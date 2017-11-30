@@ -186,3 +186,7 @@ Source: https://pixabay.com/en/service/terms/
  
  * Added Support For Footer Sidebar.
  * Minor Bug Fixes. 
+ 
+  ### Version 1.3.3 
+  
+  * Plum Theme Layout bug fixed on mobile screen.
