@@ -190,3 +190,8 @@ Source: https://pixabay.com/en/service/terms/
   ### Version 1.3.3 
   
   * Plum Theme Layout bug fixed on mobile screen.
+  
+  ###Version 1.3.4
+  
+  * Plum Hero Button Issue Fixed
+  * Minor Bug Fixes
