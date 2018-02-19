@@ -113,8 +113,8 @@ function plum_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title title-font">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title title-font">',
+		'after_title'   => '</h3>',
 	) );
 	
 	register_sidebar( array(
@@ -122,8 +122,8 @@ function plum_widgets_init() {
 		'id'            => 'footer-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title title-font">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title title-font">',
+		'after_title'   => '</h3>',
 	) );
 
 	register_sidebar( array(
@@ -131,8 +131,8 @@ function plum_widgets_init() {
 		'id'            => 'footer-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title title-font">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title title-font">',
+		'after_title'   => '</h3>',
 	) );
 
 	register_sidebar( array(
@@ -140,8 +140,8 @@ function plum_widgets_init() {
 		'id'            => 'footer-3',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title title-font">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title title-font">',
+		'after_title'   => '</h3>',
 	) );
 	
 }
@@ -192,6 +192,16 @@ function plum_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'plum_scripts' );
 
+/**
+ * Enqueue Scripts for Customizer Preview screen
+ */
+function raze_custom_wp_admin_style() {
+
+    wp_enqueue_style( 'plum-admin_css', get_template_directory_uri() . '/assets/ext-css/admin.css' );
+    wp_enqueue_style( 'raze-fontawesome-style', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css' );
+
+}
+add_action( 'admin_enqueue_scripts', 'raze_custom_wp_admin_style' );
 
 //Backwards Compatibility FUnction
 function plum_logo() {	

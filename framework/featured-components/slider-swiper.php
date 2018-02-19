@@ -24,7 +24,7 @@ $count = esc_html( rt_slider::fetch('count') );
 					?>
 					<div class="swiper-slide">
 		            	<a href="<?php echo $url; ?>">
-		            		<img src="<?php echo $img ?>" data-thumb="<?php echo $img ?>" title="<?php echo $title." - ".$desc ?>" />
+		            		<img src="<?php echo $img ?>" data-thumb="<?php echo $img ?>" title="<?php echo $title." - ".$desc ?>" alt="<?php echo $title; ?>" />
 		            	</a>
 		            	<div class="slidecaption">
 			                
