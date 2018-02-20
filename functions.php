@@ -166,7 +166,7 @@ function plum_scripts() {
 	
 	wp_enqueue_style('plum-body-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('plum_body_font', 'Open Sans') ).':100,300,400,700' );
 	
-	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/font-awesome/css/fontawesome-all.min.css' );
 	
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css' );
 	
@@ -198,7 +198,7 @@ add_action( 'wp_enqueue_scripts', 'plum_scripts' );
 function raze_custom_wp_admin_style() {
 
     wp_enqueue_style( 'plum-admin_css', get_template_directory_uri() . '/assets/ext-css/admin.css' );
-    wp_enqueue_style( 'raze-fontawesome-style', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css' );
+    wp_enqueue_style( 'plum-fontawesome-style', get_template_directory_uri() . '/assets/font-awesome/css/fontawesome-all.min.css' );
 
 }
 add_action( 'admin_enqueue_scripts', 'raze_custom_wp_admin_style' );
