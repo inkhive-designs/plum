@@ -209,3 +209,8 @@ Source: https://pixabay.com/en/service/terms/
 ### Version 1.3.7
 
 * Updated Font Awesome
+
+### Version 1.3.8
+
+* Fixed Facebook Referral Link in Customizer
+* Fixed Header Image Issue

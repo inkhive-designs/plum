@@ -26,7 +26,7 @@ function plum_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'plum_custom_header_args', array(
 		'default-image'          => get_template_directory_uri().'/assets/images/header.jpg',
 		'default-text-color'     => '#ffffff',
-		'height'				 => 600,
+		'height'				 => 650,
 		'width'					 => 1440,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'plum_header_style',

@@ -266,4 +266,7 @@ require get_template_directory() . '/framework/tgmpa.php';
  */
 require get_template_directory() . '/framework/widgets/plum-video.php';
 
+add_filter('jpeg_quality', function($arg){return 100;});
+
+add_filter( 'wp_editor_set_quality', function($arg){return 100;} );
 
