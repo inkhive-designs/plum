@@ -65,18 +65,25 @@ Important Links
  -----------------*/
 .plum-important-links {
   background: #5b4a9b;
-  padding: 5px 10px;
+  padding: 10px 15px;
   color: #FFF !important;
   text-align: center;
   display: block;
-  margin-top: 5px;
+  margin: 15px 5px;
   line-height: 1.2;
   box-shadow: none;
+  border-radius: 5px;
   font-style: normal;
   text-decoration: none;
+  transition: ease all 0.05s;
+  -webkit-transition: ease all 0.05s;
+  -moz-transition: ease all 0.05s;
+  -ms-transition: ease all 0.05s;
+  -o-transition: ease all 0.05s;
 }
 .plum-important-links:hover {
-  background: #3d3167;
+  background: #51428a;
+  transform: translateY(1px);
 }
 /*-------------------
 Enable Disable Switch Control

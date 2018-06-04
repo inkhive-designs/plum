@@ -29,7 +29,8 @@
 
 	$wp_customize->add_setting('plum_social_icon_style', array(
 	    'default' => 'none',
-        'sanitize_callback' => 'plum_sanitize_social_style'
+        'sanitize_callback' => 'plum_sanitize_social_style',
+        'transport'	=> 'postMessage'
     ) );
 
 	function plum_sanitize_social_style($input) {
@@ -61,7 +62,8 @@
 		$wp_customize->add_setting(
 			'plum_social_'.$x, array(
 				'sanitize_callback' => 'plum_sanitize_social',
-				'default' => 'none'
+				'default' => 'none',
+				'transport'	=> 'postMessage'
 			));
 
 		$wp_customize->add_control( 'plum_social_'.$x, array(

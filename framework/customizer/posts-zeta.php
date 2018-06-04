@@ -6,7 +6,7 @@ function plum_customize_zeta( $wp_customize ) {
 	    'plum_zeta_section',
 	    array(
 	        'title'     => __('Featured Posts','plum'),
-	        'priority'  => 10,
+	        'priority'  => 9,
 	        'panel'     => 'plum_a_fcp_panel'
 	    )
 	);

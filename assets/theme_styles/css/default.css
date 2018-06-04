@@ -663,7 +663,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 99;
   text-align: center;
   display: none;
@@ -680,8 +680,8 @@ a {
   outline: none;
   padding: 20px;
   font-size: 28px;
-  border: solid 3px #FFF;
-  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 0;
   color: white;
   width: 80%;
@@ -1935,6 +1935,9 @@ a {
   color: white;
   text-decoration: underline;
 }
+#colophon .site-info .custom-info {
+  display: inline-block;
+}
 /* featured Posts */
 .eta {
   margin: 20px 0;
@@ -2549,6 +2552,12 @@ a {
 .slide .out-thumb .entry-title a:hover {
   color: #5b4a9b;
 }
+.slide .out-thumb .postedon .date {
+  padding: 8px 12px;
+}
+.slide .out-thumb .postedon .author {
+  padding: 8px 12px;
+}
 .slide .out-thumb h3 {
   margin: 10px 0;
 }
@@ -2876,20 +2885,20 @@ p.demo_store {
   display: block;
   height: 18px;
   overflow: hidden;
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 Free';
   text-align: center;
-  margin: 1px auto 6px auto !important;
   width: 78px;
 }
 .star-rating:before {
   content: "\f005\f005\f005\f005\f005";
-  color: #333333;
+  font-weight: 400;
+  color: #f29606;
   top: 0;
   left: 0;
   float: left;
   position: absolute;
   letter-spacing: 2px;
-  font-size: 15px;
+  font-size: 12px;
 }
 .star-rating span {
   overflow: hidden;
@@ -2901,12 +2910,13 @@ p.demo_store {
 }
 .star-rating span:before {
   content: "\f005\f005\f005\f005\f005";
-  color: #5b4a9b;
+  font-weight: 900;
+  color: #f29606;
   top: 0;
   position: absolute;
   left: 0;
   letter-spacing: 2px;
-  font-size: 15px;
+  font-size: 12px;
 }
 .star-rating .rating {
   display: none;

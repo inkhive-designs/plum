@@ -82,7 +82,7 @@
 		    'label'    => __( 'Disable Sidebar on Home/Blog.','plum' ),
 		    'section'  => 'plum_sidebar_options',
 		    'type'     => 'checkbox',
-		    'active_callback' => 'plum_show_sidebar_options',
+		    //'active_callback' => 'plum_show_sidebar_options',
 		    'default'  => false
 		)
 	);
@@ -98,7 +98,7 @@
 		    'label'    => __( 'Disable Sidebar on Front Page.','plum' ),
 		    'section'  => 'plum_sidebar_options',
 		    'type'     => 'checkbox',
-		    'active_callback' => 'plum_show_sidebar_options',
+		   //'active_callback' => 'plum_show_sidebar_options',
 		    'default'  => false
 		)
 	);
@@ -118,7 +118,7 @@
 		    'description' => __('Min: 25%, Default: 33%, Max: 40%','plum'),
 		    'section'  => 'plum_sidebar_options',
 		    'type'     => 'range',
-		    'active_callback' => 'plum_show_sidebar_options',
+		    //'active_callback' => 'plum_show_sidebar_options',
 		    'input_attrs' => array(
 		        'min'   => 3,
 		        'max'   => 5,
@@ -130,12 +130,14 @@
 	);
 	
 	/* Active Callback Function */
+/*
 	function plum_show_sidebar_options($control) {
 	   
 	    $option = $control->manager->get_setting('plum_disable_sidebar');
 	    return $option->value() == false ;
 	    
 	}
+*/
 	
 	function plum_sanitize_text( $input ) {
 	    return wp_kses_post( force_balance_tags( $input ) );
@@ -155,7 +157,8 @@
 	'plum_footer_text',
 	array(
 		'default'		=> '',
-		'sanitize_callback'	=> 'sanitize_text_field'
+		'sanitize_callback'	=> 'sanitize_text_field',
+		'transport'		=> 'postMessage'
 		)
 	);
 	
