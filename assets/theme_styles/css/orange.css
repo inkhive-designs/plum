@@ -1805,7 +1805,8 @@ a {
 #footer-sidebar .footer-column .widget_meta ul li:before,
 #footer-sidebar .footer-column .widget_nav_menu ul li:before {
   content: "\f054";
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   color: #a6a6a6;
   font-size: 10px;
   margin-right: 5px;

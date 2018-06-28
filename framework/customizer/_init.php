@@ -40,6 +40,17 @@ require_once get_template_directory().'/framework/customizer/social-icons.php';
 require_once get_template_directory().'/framework/customizer/custom-page.php';
 require_once get_template_directory().'/framework/customizer/misc-scripts.php';
 
+add_action( 'customize_preview_init', 'plum_customize_preview_js' );
+
+/**
+ *	
+**/
+
+function plum_customize_control_js() {
+	wp_enqueue_script( 'plum_customize_control_js', get_theme_file_uri( '/assets/js/customizer-control.js' ), array( 'jquery' ), '1.0', true );
+}
+add_action( 'customize_controls_enqueue_scripts', 'plum_customize_control_js' );
+
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
@@ -48,8 +59,3 @@ function plum_customize_preview_js() {
 	wp_enqueue_script( 'plum_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'jquery' ), '2.0', true );
 }
 add_action( 'customize_preview_init', 'plum_customize_preview_js' );
-
-function plum_customize_control_js() {
-	wp_enqueue_script( 'plum_customize_control_js', get_theme_file_uri( '/assets/js/customizer-control.js' ), array( 'jquery' ), '1.0', true );
-}
-add_action( 'customize_controls_enqueue_scripts', 'plum_customize_control_js' );

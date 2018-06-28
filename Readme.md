@@ -6,7 +6,7 @@
 **Version:** 1.4.0
 **License:** GPL v3  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
-**Tags:** custom-background, two-columns, one-column, custom-colors, flexible-header, theme-options, right-sidebar, grid-layout, custom-menu, threaded-comments, translation-ready, featured-images, blog, full-width-template, e-commerce, footer-widgets, entertainment, photography, featured-image-header
+**Tags:** custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, blog, holiday, post-formats, custom-header, grid-layout
 
 Creative and Beautiful WordPress Theme with a Large Header
 
