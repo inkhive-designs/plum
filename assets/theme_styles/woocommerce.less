@@ -544,19 +544,20 @@ ol.commentlist {
 		font-family: inherit;
 		text-decoration: none;
 		overflow: visible;
-		padding: .618em 1em;
+		padding: 10px 15px;
 		font-weight: 700;
 		border-radius: 3px;
 		left: auto;
 		color: @content;
 		background-color: darken(@background,8%);
-		border: 0;
+		border: solid 1px #ddd;
 		white-space: nowrap;
 		display: inline-block;
 		background-image: none;
 		box-shadow: none;
 		-webkit-box-shadow: none;
 		text-shadow: none;
+		border-radius: 0px;
 		
 		&.loading {
 			opacity: 0.25;
@@ -1366,6 +1367,9 @@ form {
 
 		input.input-text,
 		textarea {
+			padding: 8px 4px;
+			border-radius: 0px;
+			border: solid 1px #eee;
 			width: 100%;
 			margin: 0;
 			outline: 0;
@@ -1455,6 +1459,12 @@ p.woocommerce-shipping-contents {
  */
 .woocommerce-checkout {
 	.checkout {
+		input {
+			
+		}
+		textarea {
+			border-radius:  0px;
+		}
 		.col-2 {
 			h3#ship-to-different-address {
 				float: left;
@@ -1628,8 +1638,10 @@ p.woocommerce-shipping-contents {
 		}
 	}
 	#place_order {
-		background: darken(@background,10%);
+		background: @accent;
 		font-weight: bold;
+		color: white;
+		border: 0px;
 	}
 	.select2-drop-active, .select2-drop {
 		border: solid 1px darken(@background,10px);

@@ -19,7 +19,6 @@ $count = esc_html( rt_slider::fetch('count') );
 					$title = esc_html( rt_slider::fetch('title', $i ) );
 					$desc = esc_html( rt_slider::fetch('desc', $i) );
 					$button = esc_html( rt_slider::fetch('cta_button', $i) );
-					 
 					
 					?>
 					<div class="swiper-slide">

@@ -267,3 +267,11 @@ endif;
 require get_template_directory() . '/framework/widgets/recent-posts.php';
 
 
+/**
+ *	Setting up a PHP constant for use in WP Forms Lite Plugin
+**/
+
+
+if ( ! defined( 'WPFORMS_SHAREASALE_ID' ) ) {
+	define( 'WPFORMS_SHAREASALE_ID', '1802605' );
+}

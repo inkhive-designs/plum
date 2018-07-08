@@ -16,11 +16,6 @@
 			$( '.site-description' ).text( to );
 		} );
 	} );
-	wp.customize( 'display_header_text', function ( value ) {
-		value.bind( function ( to ) {
-			$( '#text-title-desc' ).toggle();
-		});
-	} );
 	wp.customize( 'plum_page_title', function( value ) {
 		value.bind( function ( to ) {
 			$( 'body.home.page header.entry-header' ).toggle();
@@ -66,11 +61,6 @@
 		value.bind( function( to ) {
 			$( '.site-description' ).css( 'color', to );
 		} );
-	} );
-	wp.customize( 'display_header_text', function( value ) {
-		value.bind( function( to ) {
-			$( '#text-title-desc' ).toggle();
-		});
 	} );
 	
 	wp.customize( 'plum_social_icon_style', function( value ) {

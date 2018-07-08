@@ -51,9 +51,6 @@
     endif;
 ?>
 
-
-
-
     <div class="mega-container">
 		
 		<?php if( class_exists('rt_slider') ) {

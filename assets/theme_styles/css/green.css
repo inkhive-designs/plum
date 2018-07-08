@@ -1821,8 +1821,8 @@ a {
 }
 #respond input,
 #respond textarea {
-  background: #f2f2f2;
-  border: solid 1px #cccccc;
+  background: #f7f7f7;
+  border: solid 1px #eee;
   color: #333333;
   outline: none;
 }
@@ -1860,11 +1860,18 @@ a {
 #respond .form-submit input[type=submit] {
   box-shadow: none;
   text-shadow: none;
-  padding: 10px;
-  background: #ffffff;
-  font-weight: bold;
+  padding: 10px 15px;
+  background: #eee;
+  font-size: 13px;
+  font-weight: normal;
+  border: solid 1px #ddd;
   color: green;
+  border-radius: 0px;
   margin-bottom: 60px;
+}
+#respond .form-submit input[type=submit]:hover {
+  background: #ddd;
+  border: solid 1px #ccc;
 }
 #respond .comment-notes,
 #respond .logged-in-as {
@@ -1938,6 +1945,16 @@ a {
 }
 #colophon .site-info .custom-info {
   display: inline-block;
+}
+/**
+ *
+ *	Custom Styles for the WPForms Plugin go here
+ *
+**/
+div.wpforms-container .wpforms-field-description {
+  color: #999;
+  font-weight: 300;
+  font-size: 11px;
 }
 /* featured Posts */
 .eta {
@@ -3058,19 +3075,20 @@ ol.commentlist {
   font-family: inherit;
   text-decoration: none;
   overflow: visible;
-  padding: .618em 1em;
+  padding: 10px 15px;
   font-weight: 700;
   border-radius: 3px;
   left: auto;
   color: #333333;
   background-color: #ebebeb;
-  border: 0;
+  border: solid 1px #ddd;
   white-space: nowrap;
   display: inline-block;
   background-image: none;
   box-shadow: none;
   -webkit-box-shadow: none;
   text-shadow: none;
+  border-radius: 0px;
 }
 .woocommerce a.button.loading,
 .woocommerce button.button.loading,
@@ -3792,6 +3810,9 @@ form .form-row .input-checkbox {
 }
 form .form-row input.input-text,
 form .form-row textarea {
+  padding: 8px 4px;
+  border-radius: 0px;
+  border: solid 1px #eee;
   width: 100%;
   margin: 0;
   outline: 0;
@@ -3862,6 +3883,9 @@ p.woocommerce-shipping-contents {
 /**
  * Checkout
  */
+.woocommerce-checkout .checkout textarea {
+  border-radius: 0px;
+}
 .woocommerce-checkout .checkout .col-2 h3#ship-to-different-address {
   float: left;
   clear: none;
@@ -4033,8 +4057,10 @@ p.woocommerce-shipping-contents {
   vertical-align: middle;
 }
 .woocommerce-checkout #place_order {
-  background: #e6e6e6;
+  background: green;
   font-weight: bold;
+  color: white;
+  border: 0px;
 }
 .woocommerce-checkout .select2-drop-active,
 .woocommerce-checkout .select2-drop {
