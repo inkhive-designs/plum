@@ -20,7 +20,9 @@
 	
 	$wp_customize->add_setting(
 		'plum_blog_layout',
-		array( 'sanitize_callback' => 'plum_sanitize_blog_layout' )
+		array( 
+		'default'			=> 'plum',
+		'sanitize_callback' => 'plum_sanitize_blog_layout' )
 	);
 	
 	function plum_sanitize_blog_layout( $input ) {

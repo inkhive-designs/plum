@@ -6,6 +6,8 @@
 
 //Define all Variables.
 $count = esc_html( rt_slider::fetch('count') );
+
+
 ?>
 <div id="slider-bg">
 	<div class="container slider-container-wrapper">

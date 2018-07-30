@@ -46,10 +46,12 @@ add_action( 'customize_preview_init', 'plum_customize_preview_js' );
  *	
 **/
 
+/*
 function plum_customize_control_js() {
 	wp_enqueue_script( 'plum_customize_control_js', get_theme_file_uri( '/assets/js/customizer-control.js' ), array( 'jquery' ), '1.0', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'plum_customize_control_js' );
+*/
 
 
 /**

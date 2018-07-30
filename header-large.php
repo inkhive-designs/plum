@@ -43,6 +43,7 @@
 		
 	</header><!-- #masthead -->
 	
+	
 	<?php get_template_part('framework/featured-components/featured', 'eta'); ?>
 	<?php get_template_part('framework/featured-components/featured', 'zeta'); ?>
 

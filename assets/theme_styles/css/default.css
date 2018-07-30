@@ -685,7 +685,6 @@ a {
   border-radius: 0;
   color: white;
   width: 80%;
-  text-align: center;
   clear: both;
 }
 #jumbosearch .form input[type=search]::-webkit-input-placeholder {
@@ -1497,7 +1496,7 @@ a {
   font-size: 16px;
   padding-bottom: 10px;
   outline: none;
-  width: 80%;
+  width: 100%;
 }
 #secondary .search-submit {
   display: none;
@@ -1945,16 +1944,6 @@ a {
 }
 #colophon .site-info .custom-info {
   display: inline-block;
-}
-/**
- *
- *	Custom Styles for the WPForms Plugin go here
- *
-**/
-div.wpforms-container .wpforms-field-description {
-  color: #999;
-  font-weight: 300;
-  font-size: 11px;
 }
 /* featured Posts */
 .eta {

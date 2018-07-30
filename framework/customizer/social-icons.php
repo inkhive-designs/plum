@@ -9,11 +9,11 @@
 	
 	$social_networks = array( //Redefinied in Sanitization Function.
 					'none' => __('-','plum'),
-					'facebook' => __('Facebook','plum'),
+					'facebook-f' => __('Facebook','plum'),
 					'twitter' => __('Twitter','plum'),
 					'google-plus-g' => __('Google Plus','plum'),
 					'instagram' => __('Instagram','plum'),
-					'vine' => __('Vine','plum'),
+					'linkedin-in' => __('Linked In','plum'),
 					'vimeo-v' => __('Vimeo','plum'),
 					'youtube' => __('Youtube','plum'),
 					'flickr' => __('Flickr','plum'),
@@ -92,11 +92,11 @@
 	function plum_sanitize_social( $input ) {
 		$social_networks = array(
 					'none' ,
-					'facebook',
+					'facebook-f',
 					'twitter',
 					'google-plus-g',
 					'instagram',
-					'vine',
+					'linkedin-in',
 					'vimeo-v',
 					'youtube',
 					'flickr',

@@ -222,3 +222,20 @@ Source: https://pixabay.com/en/service/terms/
 ### Version 1.4.0
 
 * Improved the Customizer Controls
+
+### Version 1.4.1
+
+* Font Awesome in footer Fixed
+
+### Version 1.4.2
+
+* Minor Bug Fixes
+
+### Version 1.4.3
+
+* Changed Vine Social Icon with Linked-In Social Icon
+
+### Version 1.4.4
+
+* Changed the ShareASale ID
+* Modified the Search Layout

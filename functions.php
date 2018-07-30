@@ -93,7 +93,7 @@ function plum_setup() {
 	add_theme_support('woocommerce');
 	
 	//Slider Support
-	add_theme_support('rt-slider', array( 10 ) );
+	add_theme_support('rt-slider', array( 10, 'pages' ) );
 	
 	add_theme_support( 'wc-product-gallery-lightbox' );
 	
