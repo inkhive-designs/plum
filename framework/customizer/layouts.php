@@ -130,7 +130,83 @@
 		    ),
 		)
 	);
-	
+
+        $wp_customize->add_setting( 'plum_blog_sidebar_layout',
+            array(
+                'default' => 'sidebarright',
+                'transport'	=> 'postMessage',
+                'sanitize_callback' => 'plum_sidebar_sanitize'
+            )
+        );
+
+        $wp_customize->add_control(
+            new Plum_Image_Radio_Custom_Control(
+                $wp_customize,
+                'plum_blog_sidebar_layout',
+                array(
+                    'label' => __( 'Blog Sidebar Layout', 'plum' ),
+                    'description'	=> __('Sidebar can be toggled from Sidebar Layout Section', 'plum'),
+                    'section' => 'plum_sidebar_options',
+                    'settings' => 'plum_blog_sidebar_layout',
+                    'priority'	=> 10,
+                    'choices' => array(
+                        'sidebarleft' => array(
+                            'image' => trailingslashit( get_template_directory_uri() ) . 'assets/images/layouts/left-sidebar.png',
+                            'name' => __( 'Left Sidebar', 'plum' )
+                        ),
+                        'sidebarright' => array(
+                            'image' => trailingslashit( get_template_directory_uri() ) . 'assets/images/layouts/right-sidebar.png',
+                            'name' => __( 'Right Sidebar', 'plum' )
+                        )
+                    )
+                )
+            )
+        );
+
+        $wp_customize->add_setting( 'plum_front_sidebar_layout',
+            array(
+                'default' => 'sidebarright',
+                'transport'	=> 'postMessage',
+                'sanitize_callback' => 'plum_sidebar_sanitize'
+            )
+        );
+
+        $wp_customize->add_control(
+            new Plum_Image_Radio_Custom_Control(
+                $wp_customize,
+                'plum_front_sidebar_layout',
+                array(
+                    'label' => __( 'Front Page Sidebar Layout', 'plum' ),
+                    'description'	=> __('Sidebar can be toggled from Sidebar Layout Section', 'plum'),
+                    'section' => 'plum_sidebar_options',
+                    'settings' => 'plum_front_sidebar_layout',
+                    'priority'	=> 11,
+                    'choices' => array(
+                        'sidebarleft' => array(
+                            'image' => trailingslashit( get_template_directory_uri() ) . 'assets/images/layouts/left-sidebar.png',
+                            'name' => __( 'Left Sidebar', 'plum' )
+                        ),
+                        'sidebarright' => array(
+                            'image' => trailingslashit( get_template_directory_uri() ) . 'assets/images/layouts/right-sidebar.png',
+                            'name' => __( 'Right Sidebar', 'plum' )
+                        )
+                    )
+                )
+            )
+        );
+
+
+        function plum_sidebar_sanitize( $input, $setting ) {
+            //get the list of possible radio box or select options
+            $choices = $setting->manager->get_control( $setting->id )->choices;
+
+            if ( array_key_exists( $input, $choices ) ) {
+                return $input;
+            } else {
+                return $setting->default;
+            }
+        }
+        
 	/* Active Callback Function */
 /*
 	function plum_show_sidebar_options($control) {

@@ -70,69 +70,37 @@
 		});
 	});
 	
-	
-	wp.customize( 'plum_social_1', function( value ) {
-		value.bind( function( to ) {
-			var ClassNew	=	'fab fa-' + to;
-			jQuery('.social-icons' ).find( 'i:eq(0)' ).attr( 'class', ClassNew );
-		});
+	var count = [1,2,3,4,5,6];
+    jQuery.each ( count, function( index ) {
+        var socialCount	=	index + 1;
+        wp.customize( 'plum_social_' + socialCount, function( value ) {
+            value.bind( function( to ) {
+                var ClassNew	=	'fab fa-' + to;
+                jQuery('.social-icons' ).find( 'i:eq(' + (socialCount - 1) +')' ).attr( 'class', ClassNew );
+            });
+        });
 	});
-	
-	wp.customize( 'plum_social_2', function( value ) {
-		value.bind( function( to ) {
-			var ClassNew	=	'fab fa-' + to;
-			jQuery('.social-icons' ).find( 'i:eq(1)' ).attr( 'class', ClassNew );
-		});
-	});
-	
-	wp.customize( 'plum_social_3', function( value ) {
-		value.bind( function( to ) {
-			var ClassNew	=	'fab fa-' + to;
-			jQuery('.social-icons' ).find( 'i:eq(2)' ).attr( 'class', ClassNew );
-		});
-	});
-	
-	wp.customize( 'plum_social_4', function( value ) {
-		value.bind( function( to ) {
-			var ClassNew	=	'fab fa-' + to;
-			jQuery('.social-icons' ).find( 'i:eq(3)' ).attr( 'class', ClassNew );
-		});
-	});
-	
-	wp.customize( 'plum_social_5', function( value ) {
-		value.bind( function( to ) {
-			var ClassNew	=	'fab fa-' + to;
-			jQuery('.social-icons' ).find( 'i:eq(4)' ).attr( 'class', ClassNew );
-		});
-	});
-	
-	wp.customize( 'plum_social_6', function( value ) {
-		value.bind( function( to ) {
-			var ClassNew	=	'fab fa-' + to;
-			jQuery('.social-icons' ).find( 'i:eq(5)' ).attr( 'class', ClassNew );
-		});
-	});
-/*
-	var	faClassPrev	=	jQuery('.social-icons').find('a').each(function() {
-		alert(jQuery(this).find('i').attr('class'));
-	});
-*/
-/*
-	wp.customize( 'plum_social_1', function( value ) {
-		value.bind( function( to ) {
-			
-			alert(faClassPrev);
-*/
-/*
-			var faClassNew	=	'fa-' + to;
-			faClassPrev.removeClass('fa-pinterest-p').addClass(faClassNew);
-*/
-/*
-			var faClass	=	'fa-' + to;
-			jQuery( '.social-icons a:first-child i' ).removeClass()
-*/
-/*
-		});
-	});
-*/
+
+    /*---- Sidebar Align ----*/
+
+    wp.customize( 'plum_blog_sidebar_layout', function( value ) {
+        value.bind( function( to ) {
+            if ( to == 'sidebarleft') {
+                jQuery('body.blog #primary').css('float', 'right');
+            } else {
+                jQuery('body.blog #primary').css('float', 'left');
+            }
+        });
+    });
+
+    wp.customize( 'plum_front_sidebar_layout', function( value ) {
+        value.bind( function( to ) {
+            if ( to == 'sidebarleft') {
+                jQuery('body.home.page #primary-mono').css('float', 'right');
+            } else {
+                jQuery('body.home.page #primary-mono').css('float', 'left');
+            }
+        });
+    });
+
 } )( jQuery );

@@ -3,7 +3,7 @@
 **Contributors:** (inkhive)  
 **Requires at least:** WordPress 4.4  
 **Tested up to:** WordPress 4.9
-**Version:** 1.4.0
+**Version:** 1.4.5
 **License:** GPL v3  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 **Tags:** custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, blog, holiday, post-formats, custom-header, grid-layout
@@ -239,3 +239,8 @@ Source: https://pixabay.com/en/service/terms/
 
 * Changed the ShareASale ID
 * Modified the Search Layout
+
+### Version 1.4.5
+
+* Sidebar Layouts Added
+* Social Icons Improved

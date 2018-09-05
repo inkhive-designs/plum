@@ -52,6 +52,13 @@ function plum_custom_css_mods() {
 		$custom_css .= "@media screen and (min-width: 768px) { #masthead .masthead-inner .site-branding .site-title { font-size: 18px; } }"; 
 	endif;
 
+	//Sidebar layouts
+    if ( get_theme_mod('plum_blog_sidebar_layout', 'sidebarright') == 'sidebarleft' ) {
+        $custom_css .= "body.blog #primary {float: right;}";
+    }
+    if( get_theme_mod('plum_front_sidebar_layout', 'sidebarright') == 'sidebarleft' ) {
+        $custom_css .= "body.home.page #primary-mono { float: right; }";
+    }
 
 	//Page Title
 	if(!is_home() && is_front_page()):

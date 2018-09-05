@@ -99,3 +99,23 @@ Enable Disable Switch Control
 .switch-enable .enable-disable-switch-inner {
   margin-left: 0
 }
+
+/*--------------
+  Sidebar Layout
+--------------*/
+
+.image_radio_button_control {
+  .radio-button-label {
+    & > input {
+      display: none;
+    }
+    img {
+      width: 45%;
+      margin: 3px 5px;
+    }
+  }
+}
+
+.image_radio_button_control input[type=radio]:checked + img {
+  box-shadow: 0 0 3px rgba(30, 140, 190, 1);
+}
