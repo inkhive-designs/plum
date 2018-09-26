@@ -9,11 +9,11 @@ function plum_custom_css_mods() {
 
 	// Title & Tagline Color
 	if ( get_theme_mod('plum_title_font') ) :
-		$custom_css .= ".title-font, h1, h2, .section-title, .woocommerce ul.products li.product h3 { font-family: ".esc_html( get_theme_mod('plum_title_font','Droid Serif') )."; }";
+		$custom_css .= ".title-font, h1, h2, .section-title, .woocommerce ul.products li.product h3 { font-family: '".esc_html( get_theme_mod('plum_title_font','Arvo') )."'; }";
 	endif;
 
 	if ( get_theme_mod('plum_body_font') ) :
-		$custom_css .= "body, h2.site-description { font-family: ".esc_html( get_theme_mod('plum_body_font','Ubuntu') )."; }";
+		$custom_css .= "body, h2.site-description { font-family: '".esc_html( get_theme_mod('plum_body_font','Ubuntu') )."'; }";
 	endif;
 
 	//Title Color
@@ -91,7 +91,7 @@ function plum_custom_css_mods() {
                 }";
     endif;
 
-    if (get_theme_mod('plum_hero_background_image')) :
+    if (get_theme_mod('plum_hero2_background_image')) :
         $image1 = get_theme_mod('plum_hero2_background_image');
         $custom_css .= "#hero2 {
                     background-image: url('" . $image1 . "');

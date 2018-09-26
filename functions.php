@@ -162,9 +162,9 @@ add_action('wp_head', 'plum_custom_js');
 function plum_scripts() {
 	wp_enqueue_style( 'plum-style', get_stylesheet_uri() );
 	
-	wp_enqueue_style('plum-title-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('plum_title_font', 'Lato') ).':100,300,400,700' );
+	wp_enqueue_style('plum-title-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('plum_title_font', 'Arvo') ).':100,300,400,700' );
 	
-	wp_enqueue_style('plum-body-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('plum_body_font', 'Open Sans') ).':100,300,400,700' );
+	wp_enqueue_style('plum-body-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('plum_body_font', 'Ubuntu') ).':100,300,400,700' );
 	
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/font-awesome/css/fontawesome-all.min.css' );
 	
